@@ -7,7 +7,7 @@ const Experience = ({ data }) => (
   <div className="experience">
     <div className="link-to" id="experience" />
     <div className="title">
-      <h3>Experience</h3>
+      <h3>Work Experience</h3>
     </div>
     {data.map((job) => (
       <Job
@@ -21,10 +21,11 @@ const Experience = ({ data }) => (
 Experience.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     company: PropTypes.string,
+    location: PropTypes.string,
     position: PropTypes.string,
-    link: PropTypes.string,
-    daterange: PropTypes.string,
-    points: PropTypes.arrayOf(PropTypes.string),
+    date: PropTypes.string,
+    descr: PropTypes.string,
+    keywords: PropTypes.arrayOf(PropTypes.string),
   })),
 };
 
