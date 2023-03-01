@@ -5,7 +5,7 @@ import Job from './Experience/Job';
 
 const Experience = ({ data }) => (
   <div className="experience">
-    <div className="link-to" id="experience" />
+    <div className="link-to" id="work experience" />
     <div className="title">
       <h3>Work Experience</h3>
     </div>

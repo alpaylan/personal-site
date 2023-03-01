@@ -24,6 +24,11 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
+  {
+    outside: true,
+    label: 'Blog',
+    path: 'https://alpkeles99.medium.com',
+  },
 ];
 
 export default routes;

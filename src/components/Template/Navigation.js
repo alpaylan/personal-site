@@ -14,9 +14,14 @@ const Navigation = () => (
     </h1>
     <nav className="links">
       <ul>
-        {routes.filter((l) => !l.index).map((l) => (
+        {routes.filter((l) => (!l.index && !l.outside)).map((l) => (
           <li key={l.label}>
             <Link to={l.path}>{l.label}</Link>
+          </li>
+        ))}
+        {routes.filter((l) => (l.outside)).map((l) => (
+          <li key={l.label}>
+            <a href={l.path} target="_blank" rel="noreferrer">{l.label}</a>
           </li>
         ))}
       </ul>
