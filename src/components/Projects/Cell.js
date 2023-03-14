@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
+function truncate(str, n) {
+  return (str.length > n) ? `${str.substr(0, n - 1)}...` : str;
+}
+
 const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
@@ -11,7 +15,7 @@ const Cell = ({ data }) => (
         <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
       </header>
       <div className="description">
-        <p>{data.desc}</p>
+        <p>{truncate(data.desc, 250)}</p>
       </div>
     </article>
   </div>

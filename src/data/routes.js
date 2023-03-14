@@ -25,9 +25,8 @@ const routes = [
     path: '/contact',
   },
   {
-    outside: true,
     label: 'Blog',
-    path: 'https://alpkeles99.medium.com',
+    path: '/blog',
   },
 ];
 
