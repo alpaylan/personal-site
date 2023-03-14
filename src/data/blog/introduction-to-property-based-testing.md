@@ -17,11 +17,11 @@ Above, you see a very simple test case for a function called dummy sort, which f
 
 But, this test case doesn’t actually give us very much knowledge on the function under test. It gives us a few clues we could perhaps generalize such as;
 
-1- Function sorts the list [2, 1, 3, 4] correctly
-2- (1) could imply that the function sorts all lists of length 4 correctly.
-3- (1) also could imply that the function sorts all lists of integer permutations from 1 up to n.
-4- (1) also could imply that the function sorts all lists of all lengths containing positive integers.
-5- (1) also could imply this function sorts any type of list containing arbitrary integers in arbitrary length.
+1. Function sorts the list [2, 1, 3, 4] correctly
+2. (1) could imply that the function sorts all lists of length 4 correctly.
+3. (1) also could imply that the function sorts all lists of integer permutations from 1 up to n.
+4. (1) also could imply that the function sorts all lists of all lengths containing positive integers.
+5. (1) also could imply this function sorts any type of list containing arbitrary integers in arbitrary length.
 
 We might be expecting any one of the properties from (1–4), but a better possibility is that we are expecting 5. We could also expect properties 1–4, but the example also wouldn’t generalize to those, at least those other than property (1).
 
