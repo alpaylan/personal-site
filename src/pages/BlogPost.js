@@ -20,7 +20,7 @@ function getPost(id) {
   return post;
 }
 
-console.log('2');
+console.log('3');
 
 // Make all hrefs react router links
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
@@ -48,6 +48,7 @@ const BlogPost = () => {
                 {value}
               </SyntaxHighlighter>
             ),
+            paragraph: ({ children }) => <><p>{children}</p><br /></>,
           }}
         >{post.markdown}
         </ReactMarkdown>
