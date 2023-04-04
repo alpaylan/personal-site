@@ -1,5 +1,12 @@
 const data = [
   {
+    id: 'academia-vs-industry',
+    title: 'Some Thoughts on Academia vs Industry(with a focus on Computer Science)',
+    link: '/blog/academia-vs-industry',
+    date: '2023-04-03',
+    desc: 'Today, there was a short Twitter discussion on senior academics leaving academia to join industry as Software Architects, and I bluntly answered with the obvious "money motive". It\'s not a secret that industry pays better, but that\'s not the only relevance of money. Industry also spends more money too. Industrial labs get more clusters, more engineers,',
+  },
+  {
     id: 'where-did-all-the-writers-go',
     title: 'Where did all the writers go?',
     link: '/blog/where-did-all-the-writers-go',
