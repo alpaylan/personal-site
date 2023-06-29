@@ -1,5 +1,12 @@
 const data = [
   {
+    id: 'fp-roadmap',
+    title: 'An Introductory Roadmap Into The Functional Programming Concepts',
+    link: '/blog/fp-roadmap',
+    date: '2023-06-28',
+    desc: 'Below are the topics I believe could be relevant to someone who would like to learn functional programming.',
+  },
+  {
     id: 'academia-vs-industry',
     title: 'Some Thoughts on Academia vs Industry(with a focus on Computer Science)',
     link: '/blog/academia-vs-industry',
