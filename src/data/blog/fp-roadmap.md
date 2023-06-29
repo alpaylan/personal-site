@@ -35,7 +35,7 @@
   - [Purely Functional Data Structures](https://en.wikipedia.org/wiki/Purely_functional_data_structure#:~:text=In%20computer%20science%2C%20a%20purely,latter%20is%20(strongly)%20immutable.)
   - [Persistent Data Structures](https://en.wikipedia.org/wiki/Persistent_data_structure)
 - Lambda Calculus
-  - [Wikipedia](https://en.wikipedia.org/wiki/Lambda_calculus#:~:text=Lambda%20calculus%20(also%20written%20as,to%20simulate%20any%20Turing%20machine.)
+  - [Wikipedia](https://en.wikipedia.org/wiki/Lambda_calculus#:~:text=Lambda%20calculus%20(also%20written%20as,to%20simulate%20any%20Turing%20machine.))
   - [Simply Typed Lambda Calculus](https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus)
   - [System-F](https://en.wikipedia.org/wiki/System_F)
 - Type Systems
