@@ -1,6 +1,13 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: '26th Annual ICFP Programming Contest',
+    subtitle: 'Co-Organizer - Community Service',
+    link: 'https://icfpcontest2023.github.io',
+    date: '2023-07-10',
+    desc: 'ICFP(International Conference on Functional Programming) Programming Contest is an annual programming contest for functional programming enthusiasts. Problems are designed to be challenging and fun. The contest is open to everyone.',
+  },
+  {
     title: 'AfetBilgi - afetbilgi.com',
     subtitle: 'Founder - Community Service',
     link: 'https://afetbilgi.com',

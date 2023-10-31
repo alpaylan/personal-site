@@ -1,5 +1,13 @@
 const positions = [
   {
+    company: 'Amazon Web Services Privacy Engineering Team - Automated Reasoning',
+    location: 'New York, USA',
+    position: 'Applied Science Intern',
+    date: 'May 2023 - Aug 2023',
+    descr: '',
+    keywords: ['Python', 'Dafny', 'AWS Encryption SDK'],
+  },
+  {
     company: 'University of Maryland - PLUM',
     location: 'Maryland, USA',
     position: 'Graduate Research Assistant',
