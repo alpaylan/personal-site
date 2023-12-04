@@ -28,6 +28,10 @@ const routes = [
     label: 'Blog',
     path: '/blog',
   },
+  {
+    label: 'Collaborators',
+    path: '/collaborators',
+  },
 ];
 
 export default routes;

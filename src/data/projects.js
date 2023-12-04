@@ -1,11 +1,25 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Tail: A Typed and Structured Document Editor',
+    subtitle: 'Personal Project',
+    link: '',
+    date: '2023-12-03',
+    desc: 'Tail is a typed and structured document editor and language for constructing and manipulating document templates.',
+  },
+  {
     title: '26th Annual ICFP Programming Contest',
     subtitle: 'Co-Organizer - Community Service',
     link: 'https://icfpcontest2023.github.io',
     date: '2023-07-10',
     desc: 'ICFP(International Conference on Functional Programming) Programming Contest is an annual programming contest for functional programming enthusiasts. Problems are designed to be challenging and fun. The contest is open to everyone.',
+  },
+  {
+    title: '2ClickMail',
+    subtitle: 'Personal Project',
+    link: '',
+    date: '2023-05-01',
+    desc: '2clickmail.com is an open-source service for creating and sharing email templates.',
   },
   {
     title: 'AfetBilgi - afetbilgi.com',

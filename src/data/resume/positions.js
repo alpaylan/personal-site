@@ -5,7 +5,7 @@ const positions = [
     position: 'Applied Science Intern',
     date: 'May 2023 - Aug 2023',
     descr: '',
-    keywords: ['Python', 'Dafny', 'AWS Encryption SDK'],
+    keywords: ['Python', 'Java', 'Dataflow Analysis'],
   },
   {
     company: 'University of Maryland - PLUM',
