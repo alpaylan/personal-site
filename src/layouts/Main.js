@@ -6,6 +6,7 @@ import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
+import NewsLetter from '../components/Template/Newsletter';
 
 const Main = (props) => (
   <HelmetProvider>
@@ -21,6 +22,7 @@ const Main = (props) => (
         {props.children}
       </div>
       {props.fullPage ? null : <SideBar />}
+      <NewsLetter />
     </div>
   </HelmetProvider>
 );

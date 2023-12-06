@@ -63,13 +63,17 @@
     @include vendor( 'flex-grow', '1');
 
     h3 {
+      font-size: 0.9em;
+    }
+
+    p {
       font-size: 0.7em;
     }
 
     .published {
       display: block;
       font-family: _font(family-heading);
-      font-size: 0.6em;
+      font-size: 0.7em;
       font-weight: _font(weight-heading);
       letter-spacing: _font(kerning-heading);
       margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
