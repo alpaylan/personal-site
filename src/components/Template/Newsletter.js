@@ -4,7 +4,7 @@ import { Close } from '@mui/icons-material';
 const shouldShowNewsletter = () => {
     let newsletter = localStorage.getItem('newsletter');
     if (typeof window !== 'undefined' && newsletter !== null && newsletter === 'false') {
-        if (new Date().getTime() - localStorage.getItem('newsletterClosedTime') < 1000 * 60 * 60 * 24 * 7) {
+        if (new Date().getTime() - localStorage.getItem('newsletterClosedTime') < 1000 * 60 * 60 * 24 * 1) {
             return false;
         } else {
             localStorage.setItem('newsletter', true);
@@ -46,8 +46,11 @@ const NewsLetter = () => {
     return (
         <div style={{
             position: 'fixed',
-            bottom: 100,
-            right: 100,
+            width: 350,
+            height: 270,
+            transform: 'translate(-50%, -50%)',
+            left: "50%",
+            top: "50%",
             backgroundColor: 'white',
             padding: 20,
             borderRadius: 2,
@@ -58,9 +61,10 @@ const NewsLetter = () => {
                 <Close onClick={closeNewsletter} />
             </div>
             <h3>Subscribe to my blog posts</h3>
+            <p>If you like my <a href="/blog">blog</a>, subscribe!</p>
 
             <input type="email" placeholder="Enter your email" onChange={e => setEmail(e.target.value)} />
-            <button style={{ marginTop: 10 }} onClick={() => subscribe(email)}>Subscribe</button>
+            <button style={{ marginTop: 20 }} onClick={() => subscribe(email)}>Subscribe</button>
 
 
         </div>
