@@ -15,7 +15,7 @@ library.add(far, fas, fab);
 
 
 const ArticlesBar = (props) => (
-  <article className="post" id="projects">
+  <article className="articlebar" id="projects">
     <h2 data-testid="heading">Articles</h2>
     {data.map((project) => (
       <p

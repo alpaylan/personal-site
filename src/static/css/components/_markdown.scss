@@ -2,6 +2,9 @@
 
 .markdown {
 
+  .markdown::-webkit-scrollbar {
+    display: none;
+  }
   
   width: 150%;
   max-height: 94vh;

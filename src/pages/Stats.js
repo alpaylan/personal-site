@@ -10,7 +10,7 @@ const Stats = () => (
     title="Stats"
     description="Some statistics about Alperen Keles and alperenkeles.com"
   >
-    <article className="post" id="stats">
+    <article className="stats" id="stats">
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/stats">Stats</Link></h2>

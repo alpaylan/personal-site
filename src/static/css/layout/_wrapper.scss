@@ -16,6 +16,11 @@
 		// padding: (_size(section-spacing) * 1.5);
 		// width: 90em;
 
+		@include breakpoint(large) {
+			@include vendor('flex-direction', 'column');
+			// padding: _size(section-spacing);
+		}
+		
 		body.is-menu-visible & {
 			opacity: 0.15;
 		}

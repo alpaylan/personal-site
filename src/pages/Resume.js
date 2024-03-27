@@ -20,7 +20,7 @@ const Resume = () => (
     title="Resume"
     description="Resume of Alperen Keles."
   >
-    <article className="post" id="resume">
+    <article className="resume" id="resume">
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="resume">Resume</Link></h2>
@@ -30,9 +30,10 @@ const Resume = () => (
 
         </div>
       </header>
+      <div className='experiences'>
       <Education data={degrees} />
       <Experience data={positions} />
-
+      </div>
     </article>
   </Main>
 );

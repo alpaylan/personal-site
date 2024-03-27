@@ -15,7 +15,7 @@ const Collaborators = () => (
     title="Blog"
     description="See Alperen Keles' collaborators."
   >
-    <article className="post" id="blog">
+    <article className="collaborators" id="blog">
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/collaborators">Collaborators</Link></h2>

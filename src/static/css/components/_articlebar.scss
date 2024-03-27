@@ -1,0 +1,60 @@
+// About page (/about)
+
+.articlebar {
+
+  max-height: 94vh;
+  overflow: scroll;
+  border: 1px solid #e6e6e6;
+  padding: 2em;
+  
+}
+
+.abouttext {
+  margin-top: 6vh;  
+
+  @include breakpoint(large) {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+
+.blogtable {
+  margin-right: 2em;
+  @include breakpoint(large) {
+    margin-left: 2em;
+  }
+}
+
+.resume {
+  margin: 2em;
+
+  .experiences {
+    border: solid 1px _palette(border);
+    border-radius: 0.3em;
+    padding: 2em;
+
+    @include breakpoint(small) {
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+.stats {
+  margin: 2em;
+  margin-right: 4em;
+
+  @include breakpoint(large) {
+    margin: 2em;
+  }
+}
+
+.collaborators {
+  margin: 2em;
+  margin-right: 4em;
+
+  @include breakpoint(large) {
+    margin: 2em;
+  }
+}
