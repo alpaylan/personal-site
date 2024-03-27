@@ -16,6 +16,13 @@ Data Schema
 
 A data schema defines a set of fields and their types. Below, you see an example data schema for a work experience section of a CV.
 
+```json
+{
+    "wtf": "is",
+    "happening": []
+}
+```
+
 ```
 {  
     "schema-name": "Work-Experience",  

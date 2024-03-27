@@ -9,17 +9,27 @@ import raw from 'raw.macro';
 import Main from '../layouts/Main';
 import data from '../data/blog';
 
+import html from "../data/blog/hurdles-of-designing-a-layout-model.html"
 const getArticle = async (name) => {
-  return require(`../data/blog/${name}.html`);
+  const html = await import(`../data/blog/${name}.html`).then((res) => res.default);
+  // set html of the article to the content of the file
+  return <div dangerouslySetInnerHTML={{__html: html }} />
 }
 
 const BlogPost = (props) => {
   const id = props.data.id;
-  console.log(getArticle(id));
-  
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    getArticle(id).then((res) => {
+      setPost(res);
+    });
+  }, [id]);
+
   return (
       <article className="post markdown" id="about">
         {props.data.title}
+        {post && post}
       </article>
   );
 };
