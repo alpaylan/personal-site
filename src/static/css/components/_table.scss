@@ -21,9 +21,11 @@
 				border-left: 0;
 				border-right: 0;
 
-				&:nth-child(2n + 1) {
-					background-color: _palette(border-bg);
+				// Hover color
+				&:hover {
+					background-color: #fbfbfb;
 				}
+
 			}
 		}
 

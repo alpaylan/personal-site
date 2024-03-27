@@ -2,28 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Keywords = ({ data }) => {
-  const styles = {
-    border: '2px solid rgba(134, 133, 133, 0.3)',
-    borderRadius: '5px',
-    marginRight: '.4em',
-    background: 'rgb(247, 248, 249)',
-    textAlign: 'left',
-    paddingTop: '.2em',
-    paddingBottom: '.2em',
-    paddingLeft: '.2em',
-    paddingRight: '.2em',
-    color: 'rgb(144, 143, 143)',
-  };
-
-  const keywords = data.map((keyword) => (
-    <span style={styles}>
-      {keyword}
-    </span>
-  ));
+  const keywords = data.join(' | ')
   return (
-    <div style={{ marginBottom: '0.6em' }}>
+    <p className='school' style={{marginTop: "-2em", marginBottom: "0.2em"}}>
       {keywords}
-    </div>
+    </p>
   );
 };
 
@@ -32,13 +15,18 @@ Keywords.propTypes = {
 };
 
 const Job = ({ data }) => (
-  <article className="jobs-container">
+  <article className="degree-container">
     <header>
-      <h4>{data.company}</h4>
-      <p className="position">{data.position}</p>
+      <div style={{ display: "flex", flexGrow: "row", justifyContent: "space-between"}}>
+      <h4 className="degree">{data.company}</h4>
+      <h4 className="date"> {data.date}</h4>
+      </div>
+      <div style={{ display: "flex", flexGrow: "row", justifyContent: "space-between"}}>
+      <p className="school">{data.position}</p>
+      <p className="school">{data.location} </p>
+      </div>
       {(data.keywords && <Keywords data={data.keywords} />)}
-      <p className="location">{data.location} </p>
-      <p className="daterange"> {data.date}</p>
+      
     </header>
   </article>
 );

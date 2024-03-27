@@ -8,30 +8,47 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import Main from '../layouts/Main';
 import Cell from '../components/Projects/Cell';
 import data from '../data/blog';
+import BlogPost from './BlogPost';
 
 library.add(far, fas, fab);
 
-const Blog = () => (
-  <Main
-    title="Blog"
-    description="See Alperen Keles' blog posts."
-  >
-    <article className="post" id="blog">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading"><Link to="/blog">Blog</Link></h2>
-          <p>A selection of blog posts. </p>
-          <p>Visit <b><a href="http://alpkeles99.medium.com" target="_blank" rel="noreferrer">my medium blog <FontAwesomeIcon icon="fab fa-medium" /> </a></b> for more posts.</p>
-        </div>
-      </header>
-      {data.map((project) => (
-        <Cell
-          data={project}
-          key={project.title}
-        />
-      ))}
-    </article>
-  </Main>
+
+const ArticlesBar = (props) => (
+  <article className="post" id="projects">
+    <h2 data-testid="heading">Articles</h2>
+    {data.map((project) => (
+      <p
+        className='project-title'
+        key={project.title}
+        onClick={() => props.setSelected(data.indexOf(project))}
+        style={{ cursor: 'pointer', fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal' }}
+      >{project.title}</p>
+    ))}
+  </article>
 );
+
+
+const Blog = () => {
+  const [selected, setSelected] = React.useState(0);
+  return (
+    <Main
+      title="Blog"
+      description="See Alperen Keles' blog posts."
+      hideBar={true}
+    >
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <ArticlesBar selected={selected} setSelected={setSelected} />
+        <article className="post" id="blog">
+          {
+            <BlogPost
+              data={data[selected]}
+              key={data[selected].title}
+            />
+          }
+        </article>
+      </div>
+    </Main>
+  )
+};
 
 export default Blog;

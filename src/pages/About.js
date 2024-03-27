@@ -13,28 +13,65 @@ const count = markdown.split(/\s+/)
   .filter((s) => s.length).length;
 
 // Make all hrefs react router links
-const LinkRenderer = ({ ...children }) => <Link {...children} />;
+const BlogTable = () => {
+  return (
+    <div>
+      <h1>Blog Posts</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Views</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-10-01</td>
+            <td><Link to="/blog/1">First Blog Post</Link></td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2021-10-01</td>
+            <td><Link to="/blog/1">First Blog Post</Link></td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2021-10-01</td>
+            <td><Link to="/blog/1">First Blog Post</Link></td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2021-10-01</td>
+            <td><Link to="/blog/1">First Blog Post</Link></td>
+            <td>100</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  )
+};
+
 
 const About = () => (
   <Main
     title="About"
-    description="Learn about Alperen Keles"
+    description="Learn about me!"
   >
-    <article className="post markdown" id="about">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading"><Link to="/about">About Me</Link></h2>
-          <p>(in about {count} words)</p>
-        </div>
-      </header>
-      <ReactMarkdown
-        source={markdown}
-        renderers={{
-          Link: LinkRenderer,
-        }}
-        escapeHtml={false}
-      />
-    </article>
+    <h1>
+      Hi, I'm Alperen!
+    </h1>
+    <p>
+      I am a <a href='https://ceng.metu.edu.tr' target='_blank' rel='noopener noreferrer'>METU CENG</a> graduate,
+      currently a third year Ph.D. student at <a href='https://www.cs.umd.edu' target='_blank' rel='noopener noreferrer'>UMD CS</a> advised
+      by <a href='https://lemonidas.github.io' target='_blank' rel='noopener noreferrer'>Leonidas Lampropoulos</a>.
+    </p>
+    <p>
+      My research focuses on Property-Based Testing, Fuzzing, and Semantics of Document Systems.
+      I like to write on my personal blog. I also like to play chess, and do the occasional side projects.
+    </p>
+    <BlogTable />
   </Main>
 );
 

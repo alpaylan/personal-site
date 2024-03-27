@@ -13,8 +13,8 @@
 		display: inline-flex;
 
 		a {
-				padding: 0 .5em;
-				margin: 0;
+			font-size: 1.2em;
+			margin: 0;
 		}
 	}
 
@@ -22,12 +22,14 @@
 
 		.title {
 			text-align: center;
-			margin-bottom: 2em;
+			font-size: 1.4em;
 		}
+
 	}
 	.experience {
 		.title {
 			text-align: center;
+			font-size: 1.4em;
 		}
 		.job {
 			margin: 1em;
@@ -38,6 +40,10 @@
 	}
 
 	.jobs-container {
+		h4 {
+			font-weight: normal
+		}
+	
 		.points {
 			li {
 				margin: 0;
@@ -86,24 +92,24 @@
 	}
 }
 
-.daterange {
-	margin-bottom: .4em;
-}
 
 .degree-container {
 	h4 {
-		font-weight: normal;
+		font-weight: bold;
 	}
 
 	.degree {
 		margin-bottom: .1em;
-		text-transform: none;
-		letter-spacing: 0.16em;
-		font-size: .8em;
+		font-size: 1em;
+	}
+
+	.date {
+		font-weight: normal;
+		margin-bottom: .1em;
+		font-size: 1em;
 	}
 
 	.school {
-		text-transform: none;
 		padding-top: 0.3em;
 		margin-bottom: 1em;
 	}
@@ -120,7 +126,6 @@
   letter-spacing: 0.25em;
   line-height: 2.5;
   margin-top: -1em;
-  text-transform: uppercase;
 }
 
 .courses ul li{

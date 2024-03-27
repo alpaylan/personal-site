@@ -19,4 +19,10 @@
 		p {
 			font-size: 0.9em;
 		}
+
+		.icons {
+			// put items in a column
+			display: flex;
+			flex-direction: column;
+		}
 	}

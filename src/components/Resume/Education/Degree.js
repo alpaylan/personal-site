@@ -4,8 +4,11 @@ import PropTypes from 'prop-types';
 const Degree = ({ data }) => (
   <article className="degree-container">
     <header>
+    <div style={{ display: "flex", flexGrow: "row", justifyContent: "space-between"}}>
       <h4 className="degree">{data.degree}</h4>
-      <p className="school"><a href={data.link}>{data.school}</a>, {data.year}</p>
+      <h4 className="date"> {data.year}</h4>
+      </div>
+      <p className="school"><a href={data.link}>{data.school}</a></p>
     </header>
   </article>
 );

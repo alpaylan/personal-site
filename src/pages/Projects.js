@@ -6,26 +6,41 @@ import Main from '../layouts/Main';
 import Cell from '../components/Projects/Cell';
 import data from '../data/projects';
 
-const Projects = () => (
-  <Main
-    title="Projects"
-    description="Learn about Alperen Keles' projects."
-  >
-    <article className="post" id="projects">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
-          <p>A selection of projects</p>
-        </div>
-      </header>
-      {data.map((project) => (
-        <Cell
-          data={project}
-          key={project.title}
-        />
-      ))}
-    </article>
-  </Main>
+const ProjectsBar = (props) => (
+  <article className="post" id="projects">
+    <h2 data-testid="heading">Projects</h2>
+    {data.map((project) => (
+      <p
+        className='project-title'
+        key={project.title}
+        onClick={() => props.setSelected(data.indexOf(project))}
+        style={{ cursor: 'pointer', fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal' }}
+      >{project.title}</p>
+    ))}
+  </article>
 );
+
+const Projects = () => {
+  const [selected, setSelected] = React.useState(0);
+  return (
+    <Main
+      title="Projects"
+      description="Learn about Alperen Keles' projects."
+      hideBar={true}
+    >
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <ProjectsBar selected={selected} setSelected={setSelected} />
+        <article className="post" id="projects">
+          {
+            <Cell
+              data={data[selected]}
+              key={data[selected].title}
+            />
+          }
+        </article>
+      </div>
+    </Main>
+  )
+};
 
 export default Projects;

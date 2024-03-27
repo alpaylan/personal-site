@@ -26,11 +26,6 @@ const Resume = () => (
           <h2 data-testid="heading"><Link to="resume">Resume</Link></h2>
           <div className="link-container">
             <h4><a href="documents/resume.pdf" download="alperen_keles.pdf"> Download as PDF <FontAwesomeIcon icon={faFileArrowDown} /> </a></h4>
-            <h4>|</h4>
-            {sections.map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>))}
           </div>
 
         </div>

@@ -9,51 +9,18 @@ import raw from 'raw.macro';
 import Main from '../layouts/Main';
 import data from '../data/blog';
 
-function getPost(id) {
-  const post = data.find((p) => p.id === id);
-  post.markdown = raw(`../data/blog/${id}.md`);
-  post.count = post.markdown.split(/\s+/)
-    .map((s) => s.replace(/\W/g, ''))
-    .filter((s) => s.length).length;
-
-  console.log(post);
-  return post;
+const getArticle = async (name) => {
+  return require(`../data/blog/${name}.html`);
 }
 
-console.log('3');
-
-// Make all hrefs react router links
-const LinkRenderer = ({ ...children }) => <Link {...children} />;
-
-const BlogPost = () => {
-  const { id } = useParams();
-  const post = getPost(id);
+const BlogPost = (props) => {
+  const id = props.data.id;
+  console.log(getArticle(id));
+  
   return (
-    <Main
-      title={post.title}
-      description={post.desc}
-    >
       <article className="post markdown" id="about">
-        <header>
-          <div className="title">
-            <h2 data-testid="heading"><Link to="/about">{post.title}</Link></h2>
-            <p>(in about {post.count} words)</p>
-          </div>
-        </header>
-        <ReactMarkdown
-          renderers={{
-            Link: LinkRenderer,
-            code: ({ value }) => (
-              <SyntaxHighlighter language="javascript" style={oneLight}>
-                {value}
-              </SyntaxHighlighter>
-            ),
-            paragraph: ({ children }) => <><p>{children}</p><br /></>,
-          }}
-        >{post.markdown}
-        </ReactMarkdown>
+        {props.data.title}
       </article>
-    </Main>
   );
 };
 export default BlogPost;

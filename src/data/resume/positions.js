@@ -1,6 +1,13 @@
 const positions = [
   {
-    company: 'Amazon Web Services Privacy Engineering Team - Automated Reasoning',
+    company: 'Bloomberg (Incoming!)',
+    location: 'New York, USA',
+    position: 'Research Intern',
+    date: 'June 2024 - Aug 2024',
+    descr: '',
+  },
+  {
+    company: 'Amazon Web Services',
     location: 'New York, USA',
     position: 'Applied Science Intern',
     date: 'May 2023 - Aug 2023',
@@ -16,7 +23,7 @@ const positions = [
     keywords: ['Coq', 'OCaml', 'Python', 'Property Based Testing'],
   },
   {
-    company: 'Amazon Web Services Privacy Engineering Team - Automated Reasoning',
+    company: 'Amazon Web Services',
     location: 'New York, USA',
     position: 'Applied Science Intern',
     date: 'May 2022 - Aug 2022',

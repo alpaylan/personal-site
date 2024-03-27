@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 import Job from './Experience/Job';
 
 const Experience = ({ data }) => (
-  <div className="experience">
-    <div className="link-to" id="work experience" />
+  <div className="education">
     <div className="title">
       <h3>Work Experience</h3>
     </div>

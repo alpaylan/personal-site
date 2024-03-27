@@ -11,26 +11,31 @@ const data = [
     link: 'https://github.com/alpaylan',
     label: 'Github',
     icon: faGithub,
+    username: 'alpaylan'
   },
   {
     link: 'https://www.instagram.com/keleesssss/',
     label: 'Instagram',
     icon: faInstagram,
+    username: 'keleesssss'
   },
   {
     link: 'https://www.linkedin.com/in/alpkeles',
     label: 'LinkedIn',
     icon: faLinkedinIn,
+    username: 'alpkeles'
   },
   {
     link: 'https://twitter.com/keleesssss',
     label: 'Twitter',
     icon: faTwitter,
+    username: 'keleesssss'
   },
   {
     link: 'mailto:akeles@umd.edu',
     label: 'Email',
     icon: faEnvelope,
+    username: 'akeles@umd.edu'
   },
 ];
 

@@ -7,11 +7,23 @@
 /* Post */
 
 	.post {
-		@include padding(_size(section-spacing), _size(section-spacing));
+		@include padding(_size(section-spacing) * 0.5, _size(section-spacing));
 		background: _palette(bg);
 		border: solid 1px _palette(border);
 		margin: 0 0 _size(section-spacing) 0;
 		position: relative;
+		width: auto;
+
+		.project-title {
+			font-size: 1em;
+			font-weight: _font(weight-heading);
+			margin: 0 0 1em 0;
+			// separator line if not the last child
+			&:not(:last-child) {
+				border-bottom: 1px solid _palette(border);
+				padding-bottom: 1em;
+			}
+		}
 
 		> header {
 			@include vendor('display', 'flex');
@@ -24,10 +36,10 @@
 			.title {
 				@include vendor('flex-grow', '1');
 				-ms-flex: 1;
-				padding: (_size(section-spacing) * 1.25) _size(section-spacing) (_size(section-spacing) * 1.1) _size(section-spacing);
+				padding: (_size(section-spacing) * 1.25) _size(section-spacing) (_size(section-spacing) * 0.75) _size(section-spacing);
 
 				h2 {
-					font-weight: _font(weight-heading-extrabold);
+					font-weight: _font(weight-heading-bold);
 					font-size: 1.5em;
 				}
 
@@ -59,7 +71,6 @@
 					font-weight: _font(weight-heading-bold);
 					letter-spacing: _font(kerning-heading);
 					margin-top: 0.5em;
-					text-transform: uppercase;
 					white-space: nowrap;
 				}
 			}
@@ -102,7 +113,6 @@
 					line-height: 1;
 					margin: 0 0 0 2em;
 					padding: 0 0 0 2em;
-					text-transform: uppercase;
 
 					&:first-child {
 						border-left: 0;
