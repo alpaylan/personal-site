@@ -20,7 +20,7 @@ const ArticlesBar = (props) => (
       <p
         className='project-title'
         key={project.title}
-        onClick={() => props.setSelected(data.indexOf(project))}
+        onClick={() => {props.setSelected(data.indexOf(project)); window.scrollTo(0, 0);} }
         style={{ cursor: 'pointer', fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal' }}
       >{project.title}</p>
     ))}
@@ -38,7 +38,7 @@ const Blog = () => {
     >
       <div style={{ display: "flex", flexDirection: "row" }}>
         <ArticlesBar selected={selected} setSelected={setSelected} />
-        <article className="post" id="blog">
+        <article className="post" id="projects">
           {
             <BlogPost
               data={data[selected]}

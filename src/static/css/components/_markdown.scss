@@ -2,12 +2,63 @@
 
 .markdown {
 
+  width: 60vw;
+  max-height: 100vh;
+  overflow: scroll;
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width:90%;
+    max-width: 800px;
+
+  }
+
   p {
     margin: auto;
   }
 
-  h1 {
-    font-size: .8em;
-    margin-top: 3em;
+  h3 {
+    font-size: 2em;
+    margin: auto;
   }
+
+  h4 {
+    font-size: 1.5em;
+    margin: auto;
+  }
+
+  h5 {
+    font-size: 1.25em;
+    margin: auto;
+  }
+
+    .graf--mixtapeEmbed {
+      font-size: 0.9em;
+      display: flex;
+      flex-direction: row-reverse;
+      
+      border: solid 1px #e6e6e6;
+      
+      border-radius: 0.3em;
+
+      a.js-mixtapeImage {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        width: 40%;
+      }
+
+      a.markup--anchor {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 1em;
+        width: 100%;
+        
+      }
+    }
 }

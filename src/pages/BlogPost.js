@@ -28,7 +28,6 @@ const BlogPost = (props) => {
 
   return (
       <article className="post markdown" id="about">
-        {props.data.title}
         {post && post}
       </article>
   );
