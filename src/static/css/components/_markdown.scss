@@ -2,9 +2,12 @@
 
 .markdown {
 
-  width: 60vw;
-  max-height: 100vh;
+  
+  width: 150%;
+  max-height: 94vh;
   overflow: scroll;
+  border: 1px solid #e6e6e6;
+  padding: 2em;
   img{
     display: block;
     margin-left: auto;
@@ -46,9 +49,9 @@
 
       a.js-mixtapeImage {
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: left top;
-        width: 40%;
+        background-size: auto;
+        width: 20%;
       }
 
       a.markup--anchor {

@@ -15,9 +15,9 @@
 		@include vendor('justify-content', 'space-between');
 		background-color: _palette(bg);
 		border-bottom: solid 1px _palette(border);
-		height: 3.5em;
+		height: 6vh;
 		left: 0;
-		line-height: 3.5em;
+		line-height: 6vh;
 		position: fixed;
 		top: 0;
 		width: 100%;

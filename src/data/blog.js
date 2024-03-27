@@ -1,24 +1,13 @@
 const data = [
   {
-    id: 'the-lies-about-abstraction',
-    title: 'The lies about abstraction',
-    link: '/blog/the-lies-about-abstraction',
-    date: '2023-12-02',
-    desc: 'Below is an excerpt from Street Coder, where Sedat Kapanoglu talks about benefits of layering in software. A business layer doesn’t know anything about databases or storage techniques. It calls on the database layer for that. The database layer encapsulates the database functionality in a DB-agnostic fashion. This kind of separation of concerns can make the testability of business logic easier because we can easily plug a mocked implementation of the storage layer into the business layer.',
-  },
-  {
-    id: 'hurdles-of-designing-a-layout-model',
-    title: 'Hurdles of Designing A Layout Model',
-    link: '/blog/hurdles-of-designing-a-layout-model',
-    date: '2023-08-06',
-    desc: 'For the past 2 weeks, I have been working on designing my own layout model for the document generator I’ve been working on. I have successfully failed to come up with a sound modal that’s expressive enough for all my use cases. I decided to document my pains for (1) clearing my vision, (2) maybe helping out anyone who ever tries to go in similar routes, (3) finding people to help me design better as the best way to get answers to your questions on the internet is to provide wrong answers. So, let’s talk about some really wrong layout models.',
-  },
-  {
     id: 'fp-roadmap',
     title: 'An Introductory Roadmap Into The Functional Programming Concepts',
     link: '/blog/fp-roadmap',
     date: '2023-06-28',
     desc: 'Below are the topics I believe could be relevant to someone who would like to learn functional programming.',
+    lang: 'en',
+    tags: ['functional programming'],
+    type: 'roadmap'
   },
   {
     id: 'introduction-to-property-based-testing',
@@ -26,90 +15,129 @@ const data = [
     link: '/blog/introduction-to-property-based-testing',
     date: '2023-03-14',
     desc: 'Property Based Random Testing is a flavor of testing that aims to use higher level specifications for testing instead of hand-writing or generating tests. It was first developed by Koen Claessen and John Hughes in 1999 as a software library for Haskell, called QuickCheck. There has been substantial development in the field since then, I will not bore you with lots of details as the purpose of this writing is to familiarize you with PBT(Property Based Testing).',
+    lang: 'en',
+    tags: ['testing'],
+    type: 'tutorial'
   },
    {
     "title": "Designing A Cryptic Language Puzzle",
     "id": "designing-a-cryptic-language-puzzle",
     "link": "/blog/designing-a-cryptic-language-puzzle",
     "desc": "Last week, I published a Cryptic Language called Kelesce on my website, with a given text as the puzzle, and some set of clues I added to…",
-    "date": "2024-03-23"
+    "date": "2024-03-23",
+    "lang": "en",
+    "tags": ["puzzle"],
+    "type": "project"
   },
   {
     "title": "Solving Algorithmic Problems in The Wild",
     "id": "solving-algorithmic-problems-in-the-wild",
     "link": "/blog/solving-algorithmic-problems-in-the-wild",
     "desc": "For most software engineers, algorithmic problems are this bizarre type of problems that they only have to know in order to succeed in…",
-    "date": "2024-03-06"
+    "date": "2024-03-06",
+    "lang": "en",
+    "tags": ["algorithms"],
+    "type": "tutorial"
   },
   {
     "title": "Afet Anında Doğru Bilgiye Ulaşım",
     "id": "afet-an%C4%B1nda-do%C4%9Fru-bilgiye-ula%C5%9F%C4%B1m",
     "link": "/blog/afet-an%C4%B1nda-do%C4%9Fru-bilgiye-ula%C5%9F%C4%B1m",
     "desc": "Bu yazının yayınlandığı tarih itibariyle 6 Şubat depreminin üzerinden 358 gün geçti. Bu yazıda, yaşadığımız depremi, kaybettiklerimizi…",
-    "date": "2024-01-28"
+    "date": "2024-01-28",
+    "lang": "tr",
+    "tags": ["afet"],
+    "type": "discussion"
   },
   {
     "title": "The Lies About Abstraction",
     "id": "the-lies-about-abstraction",
     "link": "/blog/the-lies-about-abstraction",
     "desc": "Below is an excerpt from Street Coder, where Sedat Kapanoglu talks about benefits of layering in software.",
-    "date": "2023-12-02"
+    "date": "2023-12-02",
+    "lang": "en",
+    "tags": ["software engineering"],
+    "type": "discussion"
   },
   {
     "title": "Software Demystified: How does a Text Box Work?",
     "id": "software-demystified%3A-how-does-a-text-box-work%3F",
     "link": "/blog/software-demystified%3A-how-does-a-text-box-work%3F",
     "desc": "Below is an excerpt from Street Coder, where Sedat Kapanoglu talks about opacity in software.",
-    "date": "2023-11-24"
+    "date": "2023-11-24",
+    "lang": "en",
+    "tags": ["software engineering", "algorithms"],
+    "type": "tutorial"
   },
   {
     "title": "Yazılım Projeleri: Kapsamlı Rehber",
     "id": "yaz%C4%B1l%C4%B1m-projeleri%3A-kapsaml%C4%B1-rehber",
     "link": "/blog/yaz%C4%B1l%C4%B1m-projeleri%3A-kapsaml%C4%B1-rehber",
     "desc": "Yazıya başlamadan önce, bu yazının kimlere yönelik olduğunu belirteyim.",
-    "date": "2023-11-15"
+    "date": "2023-11-15",
+    "lang": "tr",
+    "tags": ["software engineering"],
+    "type": "guide"
   },
   {
     "title": "Algoritmik Problemler: Kapsamlı Rehber",
     "id": "algoritmik-problemler%3A-kapsaml%C4%B1-rehber",
     "link": "/blog/algoritmik-problemler%3A-kapsaml%C4%B1-rehber",
     "desc": "Bu yazıda, çoğunlukla Leetcode tarzı olarak bahsedilen, aynı zamanda “Competitive Programming”, “Algoritma Sorusu”, “Lanet Olası…",
-    "date": "2023-11-01"
+    "date": "2023-11-01",
+    "lang": "tr",
+    "tags": ["algorithms"],
+    "type": "guide"
   },
   {
     "title": "Hurdles of Designing A Layout Model",
     "id": "hurdles-of-designing-a-layout-model",
     "link": "/blog/hurdles-of-designing-a-layout-model",
     "desc": "For the past 2 weeks, I have been working on designing my own layout model for the document generator I’ve been working on. I have…",
-    "date": "2023-08-06"
+    "date": "2023-08-06",
+    "lang": "en",
+    "tags": ["software engineering"],
+    "type": "project"
   },
   {
     "title": "Learner’s Guide to Functional Programming#0: Sum Types, Booleans and Naturals in Javascript",
     "id": "learner%E2%80%99s-guide-to-functional-programming%230%3A-sum-types%2C-booleans-and-naturals-in-javascript",
     "link": "/blog/learner%E2%80%99s-guide-to-functional-programming%230%3A-sum-types%2C-booleans-and-naturals-in-javascript",
     "desc": "",
-    "date": "2023-07-13"
+    "date": "2023-07-13",
+    "lang": "en",
+    "tags": ["functional programming"],
+    "type": "tutorial"
   },
   {
     "title": "Learner’s Guide to Functional Programming#1: Implementing Lists in JavaScript",
     "id": "learner%E2%80%99s-guide-to-functional-programming%231%3A-implementing-lists-in-javascript",
     "link": "/blog/learner%E2%80%99s-guide-to-functional-programming%231%3A-implementing-lists-in-javascript",
     "desc": "Although this article was written first, I suggest you read the prequel I read as background. Leaving the link below.",
-    "date": "2023-07-12"
+    "date": "2023-07-12",
+    "lang": "en",
+    "tags": ["functional programming"],
+    "type": "tutorial"
   },
   {
     "title": "Extracting Signals: Playing The Inverse Waldo Game",
     "id": "extracting-signals%3A-playing-the-inverse-waldo-game",
     "link": "/blog/extracting-signals%3A-playing-the-inverse-waldo-game",
     "desc": "I believe most of you will recognize the game in the following image, “Where’s Waldo?”. It has many variations such as finding the cat, the…",
-    "date": "2023-07-11"
+    "date": "2023-07-11",
+    "lang": "en",
+    "tags": [],
+    "type": "discussion"
   },
   {
     "title": "Sinyalleri Ayrıştırmak",
-    "id": "sinyalleri-ayr%C4%B1%C5%9Ft%C4%B1rmak",
+    "id": "extracting-signals%3A-playing-the-inverse-waldo-game",
     "link": "/blog/sinyalleri-ayr%C4%B1%C5%9Ft%C4%B1rmak",
     "desc": "Aşağıdaki fotoğrafı görüyorsunuz değil mi? Yılların bulmacasıdır, yok Waldo’yu bul, yok tavşanı bul, yok kediyi bul, yok farklı sayıyı bul…",
-    "date": "2023-07-09"
+    "date": "2023-07-09",
+    "lang": "tr",
+    "tags": [],
+    "type": "discussion"
   },
   {
     "title": "The Technical Pie (Yet-Another-Tech-Debt-Analogy)",

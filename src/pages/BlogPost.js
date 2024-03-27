@@ -27,7 +27,7 @@ const BlogPost = (props) => {
   }, [id]);
 
   return (
-      <article className="post markdown" id="about">
+      <article className="markdown" id="about">
         {post && post}
       </article>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -9,6 +9,7 @@ import Main from '../layouts/Main';
 import Cell from '../components/Projects/Cell';
 import data from '../data/blog';
 import BlogPost from './BlogPost';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 library.add(far, fas, fab);
 
@@ -20,7 +21,11 @@ const ArticlesBar = (props) => (
       <p
         className='project-title'
         key={project.title}
-        onClick={() => {props.setSelected(data.indexOf(project)); window.scrollTo(0, 0);} }
+        onClick={() => {
+          props.setSelected(data.indexOf(project));
+          window.scrollTo(0, 0);
+          window.history.pushState({}, '', `/blog/${project.id}`);
+        }}
         style={{ cursor: 'pointer', fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal' }}
       >{project.title}</p>
     ))}
@@ -29,23 +34,30 @@ const ArticlesBar = (props) => (
 
 
 const Blog = () => {
-  const [selected, setSelected] = React.useState(0);
+  const { id } = useParams();
+  const [selected, setSelected] = React.useState(id ? data.findIndex((post) => post.id === id) : 0);
+
+  useEffect(() => {
+    window.onpopstate = () => {
+      const id = window.location.pathname.split('/').pop();
+      setSelected(data.findIndex((post) => post.id === id));
+    }
+  });
+
   return (
     <Main
       title="Blog"
       description="See Alperen Keles' blog posts."
       hideBar={true}
     >
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <div style={{ display: "flex", flexDirection: "row"}}>
         <ArticlesBar selected={selected} setSelected={setSelected} />
-        <article className="post" id="projects">
-          {
-            <BlogPost
-              data={data[selected]}
-              key={data[selected].title}
-            />
-          }
-        </article>
+
+        <BlogPost
+          data={data[selected]}
+          key={data[selected].title}
+        />
+
       </div>
     </Main>
   )
