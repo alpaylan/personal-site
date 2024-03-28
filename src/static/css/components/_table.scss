@@ -80,4 +80,21 @@
 				border-top: 0;
 			}
 		}
+
+		&.celltag {
+			font-size: 0.9em;
+			padding: 0.2em 0.6em;
+			border-radius: 0.3em;
+			color: _palette(bg);
+			&.tutorial {
+			  background-color: #054e1c;
+			}
+			&.project {
+			  background-color: #2f013b;
+			}
+			&.roadmap {
+			  background-color: #4a0404;
+			}
+
+		}
 	}

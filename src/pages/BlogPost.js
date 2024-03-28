@@ -1,15 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import raw from 'raw.macro';
-import Main from '../layouts/Main';
-import data from '../data/blog';
-
-import html from "../data/blog/hurdles-of-designing-a-layout-model.html"
 const getArticle = async (name) => {
   const html = await import(`../data/blog/${name}.html`).then((res) => res.default);
   // set html of the article to the content of the file
@@ -23,6 +14,13 @@ const BlogPost = (props) => {
   React.useEffect(() => {
     getArticle(id).then((res) => {
       setPost(res);
+    });
+    fetch('https://alperenkelescom.fly.dev/view', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ "post-id": id })
     });
   }, [id]);
 

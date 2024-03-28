@@ -1,16 +1,19 @@
 // About page (/about)
 
 .articlebar {
-
-  max-height: 94vh;
-  overflow: scroll;
+  max-width: 20%;
+  max-height: 92vh;
+  overflow-y: scroll;
   border: 1px solid #e6e6e6;
   padding: 2em;
-  
+ 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .abouttext {
-  margin-top: 6vh;  
+  margin: _size(section-spacing) 0 0 0;
 
   @include breakpoint(large) {
     margin-left: 2em;
@@ -20,6 +23,14 @@
 
 
 .blogtable {
+  margin-right: 2em;
+  @include breakpoint(large) {
+    margin-left: 2em;
+  }
+}
+
+
+.articlelist {
   margin-right: 2em;
   @include breakpoint(large) {
     margin-left: 2em;
@@ -57,4 +68,36 @@
   @include breakpoint(large) {
     margin: 2em;
   }
+}
+
+.blogpage {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .articlelist {
+    margin: 2em;
+    width: 100vw;
+    @include breakpoint(large) {
+      margin-left: 2em;
+    }
+
+    .articledate {
+      @include breakpoint(medium) {
+        display: none;
+      }
+    }
+
+    .articletitle {
+      width: 60%;
+      
+      @include breakpoint(medium) {
+        width: 40%;
+      }
+    }
+  }
+
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 function truncate(str, n) {
   return (str.length > n) ? `${str.substr(0, n - 1)}...` : str;
 }
@@ -12,11 +14,12 @@ const Cell = ({ data }) => (
       <header>
         <h3><a href={data.link}>{data.title}</a></h3>
         <p>{data.subtitle}</p>
-        <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
+        <time className="published">{dayjs(data.date).format('MMM, YYYY')}</time>
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+          <span className={`celltag ${data.type}`}>{data.type}</span>
+          <span className="cellviews"> <FontAwesomeIcon icon="fa-regular fa-eye" /> {data.views}</span>
+        </div>
       </header>
-      <div className="description">
-        <p>{truncate(data.desc, 250)}</p>
-      </div>
     </article>
   </div>
 );

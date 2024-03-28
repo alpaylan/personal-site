@@ -7,6 +7,7 @@
 /* Mini Post */
 .cell-container {
   position: relative;
+  width: 20em;
 
   .description {
     position: flex;
@@ -30,7 +31,27 @@
       background-color: rgba(255,255,255,.9);
     }
   }
+
+
 }
+
+.celltag {
+  font-size: 0.9em;
+  padding: 0.2em 0.6em;
+  border-radius: 0.3em;
+  color: _palette(bg);
+  &.tutorial {
+    background-color: #054e1c;
+  }
+  &.project {
+    background-color: #2f013b;
+  }
+  &.roadmap {
+    background-color: #4a0404;
+  }
+
+}
+
 
 .mini-post {
   @include vendor( 'display', 'flex');
@@ -57,7 +78,7 @@
 
   header {
     z-index: 2;
-    @include padding(1.25em, 1.25em, (0, 3em, 0, 0));
+    @include padding(1em, 1em, (0, 3em, 2em, 0));
     min-height: 4em;
     position: relative;
     @include vendor( 'flex-grow', '1');
@@ -76,7 +97,7 @@
       font-size: 0.7em;
       font-weight: _font(weight-heading);
       letter-spacing: _font(kerning-heading);
-      margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
+      // margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
       text-transform: uppercase;
     }
 

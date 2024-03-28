@@ -2,44 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
+import { ArticleList } from '../pages/BlogPage';
 
 // Make all hrefs react router links
 const BlogTable = () => {
   return (
     <div className='blogtable'>
-      <h1>Blog Posts</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Title</th>
-            <th>Views</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2021-10-01</td>
-            <td><Link to="/blog/1">First Blog Post</Link></td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>2021-10-01</td>
-            <td><Link to="/blog/1">First Blog Post</Link></td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>2021-10-01</td>
-            <td><Link to="/blog/1">First Blog Post</Link></td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>2021-10-01</td>
-            <td><Link to="/blog/1">First Blog Post</Link></td>
-            <td>100</td>
-          </tr>
-        </tbody>
-
-      </table>
+      <ArticleList limit={10} sorting="date" />
     </div>
   )
 };

@@ -15,7 +15,7 @@ library.add(far, fas, fab);
 
 
 const ArticlesBar = (props) => (
-  <article className="articlebar" id="projects">
+  <article className="articlebar" id="articles">
     <h2 data-testid="heading">Articles</h2>
     {data.map((project) => (
       <p
@@ -24,7 +24,7 @@ const ArticlesBar = (props) => (
         onClick={() => {
           props.setSelected(data.indexOf(project));
           window.scrollTo(0, 0);
-          window.history.pushState({}, '', `/blog/${project.id}`);
+          window.history.pushState({}, '', encodeURI(`/blog/${project.id}`));
         }}
         style={{ cursor: 'pointer', fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal' }}
       >{project.title}</p>
@@ -32,6 +32,18 @@ const ArticlesBar = (props) => (
   </article>
 );
 
+
+
+const ArticleCards = () => (
+  <article className="cards">
+    {data.map((project) => (
+      <Cell
+        data={project}
+        key={project.title}
+      />
+    ))}
+  </article>
+);
 
 const Blog = () => {
   const { id } = useParams();
@@ -50,15 +62,15 @@ const Blog = () => {
       description="See Alperen Keles' blog posts."
       hideBar={true}
     >
-      <div style={{ display: "flex", flexDirection: "row"}}>
-        <ArticlesBar selected={selected} setSelected={setSelected} />
-
+      <div className="blogpage">
+          <ArticlesBar selected={selected} setSelected={setSelected} />
         <BlogPost
           data={data[selected]}
           key={data[selected].title}
         />
 
       </div>
+      <ArticleCards />
     </Main>
   )
 };
