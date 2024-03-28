@@ -77,7 +77,7 @@ const data = [
     "date": "2023-11-15",
     "lang": "tr",
     "tags": ["software engineering"],
-    "type": "guide"
+    "type": "tutorial"
   },
   {
     "title": "Algoritmik Problemler: Kapsamlı Rehber",
@@ -87,7 +87,7 @@ const data = [
     "date": "2023-11-01",
     "lang": "tr",
     "tags": ["algorithms"],
-    "type": "guide"
+    "type": "tutorial"
   },
   {
     "title": "Hurdles of Designing A Layout Model",
