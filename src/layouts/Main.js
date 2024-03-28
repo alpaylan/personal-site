@@ -23,7 +23,6 @@ const Main = (props) => {
           {props.children}
         </div>
         {props.fullPage || props.hideBar ? null : <SideBar />}
-        <NewsLetter />
       </div>
     </HelmetProvider>
   )
