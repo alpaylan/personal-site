@@ -70,7 +70,6 @@ const Blog = () => {
         />
 
       </div>
-      <ArticleCards />
     </Main>
   )
 };
