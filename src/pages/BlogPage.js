@@ -54,13 +54,15 @@ const fetchViews = async () => {
 
 export const ArticleList = (props) => {
     const [sorting, setSorting] = React.useState(props.sorting || "date");
-    const [ascending, setAscending] = React.useState(false);
-    const [sortedData, setSortedData] = React.useState(sortDataBy(staticData, sorting, true).slice(0, props.limit || staticData.length));
+    const [ascending, setAscending] = React.useState(true);
+    const [augmentedData, setAugmentedData] = React.useState(null);
+    const [sortedData, setSortedData] = React.useState(null);
 
     useEffect(() => {
         // Check if views are up to date
         fetchViews().then((data) => {
-            sortedData.forEach((project) => {
+            console.log(data);
+            staticData.forEach((project) => {
                 let localProject = data.find((v) => v._id === project.id);
 
                 if (localProject) {
@@ -69,9 +71,15 @@ export const ArticleList = (props) => {
                     project.views = 0;
                 }
             });
-            setSortedData([...sortedData]);
+            setAugmentedData([...staticData]);
         });
-    }, [sortedData]);
+    }, []);
+
+    useEffect(() => {
+        if (augmentedData) {
+            setSortedData(sortDataBy(augmentedData, sorting, ascending).slice(0, props.limit || augmentedData.length));
+        }
+    }, [augmentedData, sorting, ascending]);
 
     const setSortFn = (directive) => {
         setSorting(directive);
@@ -92,7 +100,7 @@ export const ArticleList = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {sortedData.map((project) => (
+                {sortedData && sortedData.map((project) => (
                     <tr key={project.title}>
                         <td className='articletitle'><Link to={encodeURI(`/blog/${project.id}`)}>{project.title}</Link></td>
                         <td className='articledate'>{new Date(project.date).toDateString().slice(4)}</td>
