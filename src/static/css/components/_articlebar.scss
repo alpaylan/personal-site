@@ -78,26 +78,30 @@
     flex-direction: column;
   }
 
+
+}
+
   .articlelist {
+    
     margin: 2em;
-    width: 100vw;
-    @include breakpoint(large) {
-      margin-left: 2em;
+    width: 100%;
+    @include breakpoint(medium) {
+      margin: 0;
+      
     }
 
     .articledate {
+      width: 30%;
       @include breakpoint(medium) {
         display: none;
       }
     }
 
     .articletitle {
-      width: 60%;
+      width: 50%;
       
       @include breakpoint(medium) {
         width: 40%;
       }
     }
   }
-
-}

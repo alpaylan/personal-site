@@ -15,6 +15,7 @@ const data = [
   {
     name: 'Yigit Varli',
     linkedin: 'https://www.linkedin.com/in/yigit-varli/',
+    twitter: 'https://twitter.com/yigit_v4rli',
     commonProjects: ['ICFPC22', 'AfetBilgi'],
     position: 'Software Engineer, Fullstack Developer',
   },
@@ -42,6 +43,13 @@ const data = [
     commonProjects: ['PVL'],
     position: 'Software Engineer',
   },
+  {
+    name: "Ahmet Yuksel",
+    linkedin: 'https://www.linkedin.com/in/ahmet-yuksel123/',
+    twitter: 'https://twitter.com/ahmettyuksell26',
+    commonProjects: ["Fact Checker's Tool"],
+    position: 'Data Scientist',
+  }
 ];
 
 export default data;

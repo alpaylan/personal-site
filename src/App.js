@@ -25,7 +25,6 @@ const App = () => (
     <Suspense fallback={<Main />}>
       <Switch>
         <Route exact path="/" component={About} />
-        <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/stats" component={Stats} />
         <Route path="/resume" component={Resume} />

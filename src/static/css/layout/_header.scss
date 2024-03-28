@@ -138,6 +138,8 @@
 		}
 
 		@include breakpoint(medium) {
+			height: 2.75em;
+			line-height: 2.75em;
 			.links {
 				display: none;
 			}

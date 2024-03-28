@@ -10,8 +10,8 @@
 		margin-right: _size(section-spacing);
 		margin-left: _size(section-spacing);
 		margin-top: _size(section-spacing);
-		min-width: 22em;
-		width: 22em;
+		min-width: 15em;
+		width: 15em;
 
 		> * {
 			border-top: solid 1px _palette(border);
@@ -34,7 +34,6 @@
 		}
 
 		@include breakpoint(large) {
-			margin-left: 2em;
-			margin-right: 2em;
+			padding: 2em;
 		  }
 	}
