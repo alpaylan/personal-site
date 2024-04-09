@@ -7,7 +7,7 @@ const data = [
     desc: "We all are familiar with compression, it's one of the glues of the software world, it saves us storage space, bandwidth,",
     lang: 'en',
     tags: ['learners guide', 'compression algorithms'],
-    type: 'guide'
+    type: 'tutorial'
   },
   {
     id: 'fp-roadmap',
