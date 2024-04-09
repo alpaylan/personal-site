@@ -1,5 +1,15 @@
 const data = [
   {
+    id: 'huffman',
+    title: "Learner's Guide to Compression Algorithms",
+    link: '/blog/huffman',
+    date: '2024-04-15',
+    desc: "We all are familiar with compression, it's one of the glues of the software world, it saves us storage space, bandwidth,",
+    lang: 'en',
+    tags: ['learners guide', 'compression algorithms'],
+    type: 'guide'
+  },
+  {
     id: 'fp-roadmap',
     title: 'An Introductory Roadmap Into The Functional Programming Concepts',
     link: '/blog/fp-roadmap',
