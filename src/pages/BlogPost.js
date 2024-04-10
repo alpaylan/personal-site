@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { useRef, useLayoutEffect } from 'react';
+import "highlight.js/styles/github.css";
+import hljs from "highlight.js";
 
 const getArticle = async (name) => {
   const html = await import(`../data/blog/${name}.html`).then((res) => res.default);
@@ -22,6 +24,7 @@ const BlogPost = (props) => {
       // Inject the markup, triggering a re-run! 
       post.current.innerHTML = '';
       post.current.append(documentFragment);
+      hljs.highlightAll();
     });
     
     fetch('https://alperenkelescom.fly.dev/view', {
@@ -31,9 +34,8 @@ const BlogPost = (props) => {
       },
       body: JSON.stringify({ "post-id": id })
     });
-  }, [id]);
-  React.useEffect(() => {
 
+    
   }, [id]);
 
   return (

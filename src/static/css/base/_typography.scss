@@ -143,15 +143,13 @@
 		margin: 0 0 0 0;
 		border: solid 1px #000000;
 		overflow-x: auto;
-		padding: 1em 1.5em;
 		background-color: _palette(bg-alt);
 		border-radius: 4px;
-		code {
-			display: block;
-			line-height: 1.75em;
+
+		&.graf {
 			padding: 1em 1.5em;
-			overflow-x: auto;
 		}
+
 	}
 
 	hr {
