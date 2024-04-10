@@ -20,7 +20,29 @@ you can see how the compression is done.</p>
 encoding, each run(a characte repeated a number of times) is replaced
 with a length marker. As an example,</p>
 <p><code>aaabbbcccc</code> becomes <code>a3b3c4</code>.</p>
-<script>
+<input type="hidden"  id="runLengthEncode"  value="
+const runLengthEncode = (str) => {
+    const result = [];
+
+    let currentChar = str[0];
+    let currentCount = 1;
+    let i = 0
+
+    while(i < str.length) {
+        if(str[i] === currentChar) {
+            currentCount++;
+        } else {
+            result.push([currentChar, currentCount]);
+            currentChar = str[i];
+            currentCount = 1;
+        }
+        i++;
+    }
+
+    result.push([currentChar, currentCount]);
+
+    return result.map(([c, n]) => c + n).join(&quot;&quot;);
+}" ></input><script>
 const runLengthEncode = (str) => {
     const result = [];
 
@@ -42,8 +64,28 @@ const runLengthEncode = (str) => {
     result.push([currentChar, currentCount]);
 
     return result.map(([c, n]) => c + n).join("");
-}</script>
-<pre data-code-block-lang="js" ><code class="language-javascript"  name="runLengthEncode" >const runLengthEncode = (str) =&gt; {
+}</script><button onclick="navigator.clipboard.writeText(document.getElementById('runLengthEncode').value);" >Copy</button><div style="display: flex; flex-direction: row;" ><pre><code><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+<span>13</span>
+<span>14</span>
+<span>15</span>
+<span>16</span>
+<span>17</span>
+<span>18</span>
+<span>19</span>
+<span>20</span>
+<span>21</span>
+<span>22</span></code></pre><pre style="flex:1" ><code class="language-js"  name="runLengthEncode" >const runLengthEncode = (str) =&gt; {
     const result = [];
 
     let currentChar = str[0];
@@ -64,38 +106,31 @@ const runLengthEncode = (str) => {
     result.push([currentChar, currentCount]);
 
     return result.map(([c, n]) =&gt; c + n).join("");
-}</code></pre>
-
-<input type="text"  id="x"  value="aaabbbcccc" ></input>
-<script>
+}</code></pre></div>
+<details>
+<summary>
+Click me
+</summary>
+<input type="text"  id="x"  value="aaabbbcccc" ></input><script>
     document.getElementById("x").addEventListener('input', function(event) {
     document.getElementById("y").value = runLengthEncode(document.getElementById("x").value)
 });
-</script>
-<textarea id="y" ></textarea>
-
+</script><textarea id="y" ></textarea>
+</details>
 <p>Question time! Is run-length encoding a lossless or lossy compression
 algorithm?</p>
-<input type="hidden"  id="option" ></input>
-<input type="radio"  name="option"  value="lossless"  id="option_lossless" ></input>
-<script>
+<input type="hidden"  id="option" ></input><input type="radio"  name="option"  value="lossless"  id="option_lossless" ></input><script>
     document.getElementById("option_lossless").addEventListener('input', function(event) {
     document.getElementById("option").value = "lossless";
     document.getElementById("option").dispatchEvent(new Event('input'));
 });
-</script>
-<label for="option_lossless" >lossless</label>
-<input type="radio"  name="option"  value="lossy"  id="option_lossy" ></input>
-<script>
+</script><label for="option_lossless" >lossless</label><input type="radio"  name="option"  value="lossy"  id="option_lossy" ></input><script>
     document.getElementById("option_lossy").addEventListener('input', function(event) {
     document.getElementById("option").value = "lossy";
     document.getElementById("option").dispatchEvent(new Event('input'));
 });
-</script>
-<label for="option_lossy" >lossy</label>
-<script>
+</script><label for="option_lossy" >lossy</label><script>
     document.getElementById("option").addEventListener('input', function(event) {
     document.getElementById("feedback").innerHTML = document.getElementById("option").value === "lossless" ? "Correct! Run-length encoding is a lossless compression algorithm." : "Incorrect! Run-length encoding is a lossless compression algorithm."
 });
-</script>
-<p id="feedback" ></p>
+</script><p id="feedback" ></p>
