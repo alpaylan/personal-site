@@ -10,7 +10,7 @@
 <link>https://www.alperenkeles.com/blog/devy/</link>
 <guid>https://www.alperenkeles.com/blog/devy/</guid>
 <description><![CDATA[his blog post introduces Devy, the interactive blog engine I’ve been working on. Devy is a static site generator that allows you to write interactive blog p]]></description>
-<pubDate>Thu, 11 Apr 2024 00:00:00 </pubDate>
+<pubDate>Thu, 11 Apr 2024 00:00:00</pubDate>
 <category>devy, static site generator</category>
 <content:encoded><![CDATA[<meta charset="UTF-8" ></meta>
 <h1 id="introducing-devy-written-using-devy">Introducing Devy, written
@@ -448,7 +448,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/fp-roadmap/</link>
 <guid>https://www.alperenkeles.com/blog/fp-roadmap/</guid>
 <description><![CDATA[Below are the topics I believe could be relevant to someone who would like to learn functional programming.]]></description>
-<pubDate>Wed, 28 Jun 2023 00:00:00 </pubDate>
+<pubDate>Wed, 28 Jun 2023 00:00:00</pubDate>
 <category>functional programming</category>
 <content:encoded><![CDATA[<h1 id="roadmap-of-concepts-in-functional-programming">Roadmap of Concepts in Functional Programming</h1>
 <ul>
@@ -705,7 +705,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/introduction-to-property-based-testing/</link>
 <guid>https://www.alperenkeles.com/blog/introduction-to-property-based-testing/</guid>
 <description><![CDATA[Property Based Random Testing is a flavor of testing that aims to use higher level specifications for testing instead of hand-writing or generating tests. It was first developed by Koen Claessen and John Hughes in 1999 as a software library for Haskell, called QuickCheck. There has been substantial development in the field since then, I will not bore you with lots of details as the purpose of this writing is to familiarize you with PBT(Property Based Testing).]]></description>
-<pubDate>Tue, 14 Mar 2023 00:00:00 </pubDate>
+<pubDate>Tue, 14 Mar 2023 00:00:00</pubDate>
 <category>testing</category>
 <content:encoded><![CDATA[<h1 id="introduction-to-property-based-testing">Introduction to Property Based Testing</h1>
 <p>Property Based Random Testing is a flavor of testing that aims to use higher level specifications for testing instead
@@ -1157,7 +1157,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/designing-a-cryptic-language-puzzle/</link>
 <guid>https://www.alperenkeles.com/blog/designing-a-cryptic-language-puzzle/</guid>
 <description><![CDATA[Last week, I published a Cryptic Language called Kelesce on my website, with a given text as the puzzle, and some set of clues I added to…]]></description>
-<pubDate>Sat, 23 Mar 2024 00:00:00 </pubDate>
+<pubDate>Sat, 23 Mar 2024 00:00:00</pubDate>
 <category>puzzle</category>
 <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
@@ -1423,7 +1423,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/solving-algorithmic-problems-in-the-wild/</link>
 <guid>https://www.alperenkeles.com/blog/solving-algorithmic-problems-in-the-wild/</guid>
 <description><![CDATA[For most software engineers, algorithmic problems are this bizarre type of problems that they only have to know in order to succeed in…]]></description>
-<pubDate>Wed, 06 Mar 2024 00:00:00 </pubDate>
+<pubDate>Wed, 06 Mar 2024 00:00:00</pubDate>
 <category>algorithms</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Solving Algorithmic Problems in The Wild</title></head><body><article class="h-entry">
 
@@ -1436,7 +1436,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/afet-an%C4%B1nda-do%C4%9Fru-bilgiye-ula%C5%9F%C4%B1m/</link>
 <guid>https://www.alperenkeles.com/blog/afet-an%C4%B1nda-do%C4%9Fru-bilgiye-ula%C5%9F%C4%B1m/</guid>
 <description><![CDATA[Bu yazının yayınlandığı tarih itibariyle 6 Şubat depreminin üzerinden 358 gün geçti. Bu yazıda, yaşadığımız depremi, kaybettiklerimizi…]]></description>
-<pubDate>Sun, 28 Jan 2024 00:00:00 </pubDate>
+<pubDate>Sun, 28 Jan 2024 00:00:00</pubDate>
 <category>afet</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Afet Anında Doğru Bilgiye Ulaşım</title></head><body><article class="h-entry">
 
@@ -1449,7 +1449,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/the-lies-about-abstraction/</link>
 <guid>https://www.alperenkeles.com/blog/the-lies-about-abstraction/</guid>
 <description><![CDATA[Below is an excerpt from Street Coder, where Sedat Kapanoglu talks about benefits of layering in software.]]></description>
-<pubDate>Sat, 02 Dec 2023 00:00:00 </pubDate>
+<pubDate>Sat, 02 Dec 2023 00:00:00</pubDate>
 <category>software engineering</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Lies About Abstraction</title></head><body><article class="h-entry">
 
@@ -1462,7 +1462,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/software-demystified%3A-how-does-a-text-box-work%3F/</link>
 <guid>https://www.alperenkeles.com/blog/software-demystified%3A-how-does-a-text-box-work%3F/</guid>
 <description><![CDATA[Below is an excerpt from Street Coder, where Sedat Kapanoglu talks about opacity in software.]]></description>
-<pubDate>Fri, 24 Nov 2023 00:00:00 </pubDate>
+<pubDate>Fri, 24 Nov 2023 00:00:00</pubDate>
 <category>software engineering, algorithms</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Software Demystified: How does a Text Box Work?</title></head><body><article class="h-entry">
 
@@ -1475,7 +1475,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yaz%C4%B1l%C4%B1m-projeleri%3A-kapsaml%C4%B1-rehber/</link>
 <guid>https://www.alperenkeles.com/blog/yaz%C4%B1l%C4%B1m-projeleri%3A-kapsaml%C4%B1-rehber/</guid>
 <description><![CDATA[Yazıya başlamadan önce, bu yazının kimlere yönelik olduğunu belirteyim.]]></description>
-<pubDate>Wed, 15 Nov 2023 00:00:00 </pubDate>
+<pubDate>Wed, 15 Nov 2023 00:00:00</pubDate>
 <category>software engineering</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yazılım Projeleri: Kapsamlı Rehber</title></head><body><article class="h-entry">
 
@@ -1488,7 +1488,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/algoritmik-problemler%3A-kapsaml%C4%B1-rehber/</link>
 <guid>https://www.alperenkeles.com/blog/algoritmik-problemler%3A-kapsaml%C4%B1-rehber/</guid>
 <description><![CDATA[Bu yazıda, çoğunlukla Leetcode tarzı olarak bahsedilen, aynı zamanda “Competitive Programming”, “Algoritma Sorusu”, “Lanet Olası…]]></description>
-<pubDate>Wed, 01 Nov 2023 00:00:00 </pubDate>
+<pubDate>Wed, 01 Nov 2023 00:00:00</pubDate>
 <category>algorithms</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Algoritmik Problemler: Kapsamlı Rehber</title></head><body><article class="h-entry">
 
@@ -1501,7 +1501,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/hurdles-of-designing-a-layout-model/</link>
 <guid>https://www.alperenkeles.com/blog/hurdles-of-designing-a-layout-model/</guid>
 <description><![CDATA[For the past 2 weeks, I have been working on designing my own layout model for the document generator I’ve been working on. I have…]]></description>
-<pubDate>Sun, 06 Aug 2023 00:00:00 </pubDate>
+<pubDate>Sun, 06 Aug 2023 00:00:00</pubDate>
 <category>software engineering</category>
 <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
@@ -1684,7 +1684,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-functional-programming%230%3A-sum-types%2C-booleans-and-naturals-in-javascript/</link>
 <guid>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-functional-programming%230%3A-sum-types%2C-booleans-and-naturals-in-javascript/</guid>
 <description><![CDATA[]]></description>
-<pubDate>Thu, 13 Jul 2023 00:00:00 </pubDate>
+<pubDate>Thu, 13 Jul 2023 00:00:00</pubDate>
 <category>functional programming</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learner’s Guide to Functional Programming#0: Sum Types, Booleans and Naturals in Javascript</title></head><body><article class="h-entry">
 
@@ -1697,7 +1697,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-functional-programming%231%3A-implementing-lists-in-javascript/</link>
 <guid>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-functional-programming%231%3A-implementing-lists-in-javascript/</guid>
 <description><![CDATA[Although this article was written first, I suggest you read the prequel I read as background. Leaving the link below.]]></description>
-<pubDate>Wed, 12 Jul 2023 00:00:00 </pubDate>
+<pubDate>Wed, 12 Jul 2023 00:00:00</pubDate>
 <category>functional programming</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learner’s Guide to Functional Programming#1: Implementing Lists in JavaScript</title></head><body><article class="h-entry">
 
@@ -1710,7 +1710,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/extracting-signals%3A-playing-the-inverse-waldo-game/</link>
 <guid>https://www.alperenkeles.com/blog/extracting-signals%3A-playing-the-inverse-waldo-game/</guid>
 <description><![CDATA[I believe most of you will recognize the game in the following image, “Where’s Waldo?”. It has many variations such as finding the cat, the…]]></description>
-<pubDate>Tue, 11 Jul 2023 00:00:00 </pubDate>
+<pubDate>Tue, 11 Jul 2023 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Extracting Signals: Playing The Inverse Waldo Game</title></head><body><article class="h-entry">
 
@@ -1723,7 +1723,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/sinyalleri-ayr%C4%B1%C5%9Ft%C4%B1rmak/</link>
 <guid>https://www.alperenkeles.com/blog/sinyalleri-ayr%C4%B1%C5%9Ft%C4%B1rmak/</guid>
 <description><![CDATA[Aşağıdaki fotoğrafı görüyorsunuz değil mi? Yılların bulmacasıdır, yok Waldo’yu bul, yok tavşanı bul, yok kediyi bul, yok farklı sayıyı bul…]]></description>
-<pubDate>Sun, 09 Jul 2023 00:00:00 </pubDate>
+<pubDate>Sun, 09 Jul 2023 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Sinyalleri Ayrıştırmak</title></head><body><article class="h-entry">
 
@@ -1736,7 +1736,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/the-technical-pie-%28yet-another-tech-debt-analogy%29/</link>
 <guid>https://www.alperenkeles.com/blog/the-technical-pie-%28yet-another-tech-debt-analogy%29/</guid>
 <description><![CDATA[Yesterday, I was listening to a talk by @TitusWinters on why the current metaphors for “technical debt” are insufficient and fail to…]]></description>
-<pubDate>Fri, 16 Jun 2023 00:00:00 </pubDate>
+<pubDate>Fri, 16 Jun 2023 00:00:00</pubDate>
 <category>software engineering</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Technical Pie (Yet-Another-Tech-Debt-Analogy)</title></head><body><article class="h-entry">
 
@@ -1749,7 +1749,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/visa-exclusion-as-a-form-of-inequality/</link>
 <guid>https://www.alperenkeles.com/blog/visa-exclusion-as-a-form-of-inequality/</guid>
 <description><![CDATA[The problems regarding visas to Turkish people are at a ridiculous level. I urge my colleagues in any type of position of power to tap into…]]></description>
-<pubDate>Wed, 14 Jun 2023 00:00:00 </pubDate>
+<pubDate>Wed, 14 Jun 2023 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Visa-Exclusion as A Form of Inequality</title></head><body><article class="h-entry">
 
@@ -1762,7 +1762,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-dynamic-programming%232/</link>
 <guid>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-dynamic-programming%232/</guid>
 <description><![CDATA[Dynamic programming is an algorithmic problem solving paradigm focused on recognization and elimination of repetitive computation. Earlier…]]></description>
-<pubDate>Sat, 10 Jun 2023 00:00:00 </pubDate>
+<pubDate>Sat, 10 Jun 2023 00:00:00</pubDate>
 <category>software engineering, algorithms</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learner’s Guide to Dynamic Programming#2</title></head><body><article class="h-entry">
 
@@ -1775,7 +1775,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-dynamic-programming%231/</link>
 <guid>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-dynamic-programming%231/</guid>
 <description><![CDATA[Dynamic programming is an algorithmic problem solving paradigm focused on recognization and elimination of repetitive computation. For this…]]></description>
-<pubDate>Wed, 07 Jun 2023 00:00:00 </pubDate>
+<pubDate>Wed, 07 Jun 2023 00:00:00</pubDate>
 <category>software engineering, algorithms</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learner’s Guide to Dynamic Programming#1</title></head><body><article class="h-entry">
 
@@ -1788,7 +1788,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-coq-theorem-prover%231/</link>
 <guid>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-coq-theorem-prover%231/</guid>
 <description><![CDATA[Before I begin, I must state that I am pretty much not qualified to write about theorem proving in Coq, but that was pretty much the idea…]]></description>
-<pubDate>Fri, 21 Apr 2023 00:00:00 </pubDate>
+<pubDate>Fri, 21 Apr 2023 00:00:00</pubDate>
 <category>software engineering, algorithms, formal verification</category>
 <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
@@ -2025,7 +2025,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/a-short-story-of-inequality/</link>
 <guid>https://www.alperenkeles.com/blog/a-short-story-of-inequality/</guid>
 <description><![CDATA[The voice we hear. The light we see. The step we take. The water we drink. The car we drive. The bed we sleep. The screen we look. The pen…]]></description>
-<pubDate>Mon, 17 Apr 2023 00:00:00 </pubDate>
+<pubDate>Mon, 17 Apr 2023 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A Short Story of Inequality</title></head><body><article class="h-entry">
 
@@ -2038,7 +2038,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/2clickmail%3A-2-clicks-to-change/</link>
 <guid>https://www.alperenkeles.com/blog/2clickmail%3A-2-clicks-to-change/</guid>
 <description><![CDATA[I have been working on a new service for easily creating and distributing email templates. It leverages mailto schemes creating a…]]></description>
-<pubDate>Sat, 15 Apr 2023 00:00:00 </pubDate>
+<pubDate>Sat, 15 Apr 2023 00:00:00</pubDate>
 <category>social movements</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>2ClickMail: 2 Clicks to Change</title></head><body><article class="h-entry">
 
@@ -2051,7 +2051,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/2clickmail%3A-2-t%C4%B1kta-d%C3%BCnyan%C4%B1-g%C3%BCzelle%C5%9Ftir/</link>
 <guid>https://www.alperenkeles.com/blog/2clickmail%3A-2-t%C4%B1kta-d%C3%BCnyan%C4%B1-g%C3%BCzelle%C5%9Ftir/</guid>
 <description><![CDATA[Yaklaşık 3 yıl önce, Covid-19 salgının ilk aylarında https://alpaylan.github.io/pass-fail-metu/ üzerinden ODTÜ’de Pass/Fail notlandırma…]]></description>
-<pubDate>Sat, 15 Apr 2023 00:00:00 </pubDate>
+<pubDate>Sat, 15 Apr 2023 00:00:00</pubDate>
 <category>social movements</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>2ClickMail: 2 Tıkta Dünyanı Güzelleştir</title></head><body><article class="h-entry">
 
@@ -2064,7 +2064,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/some-thoughts-on-academia-vs-industry%28with-a-focus-on-computer-science%29/</link>
 <guid>https://www.alperenkeles.com/blog/some-thoughts-on-academia-vs-industry%28with-a-focus-on-computer-science%29/</guid>
 <description><![CDATA[I’m a 2nd year Computer Science PhD student, I also spent some time in the industry(part-time and internships, not a full-time-employment)…]]></description>
-<pubDate>Mon, 03 Apr 2023 00:00:00 </pubDate>
+<pubDate>Mon, 03 Apr 2023 00:00:00</pubDate>
 <category>computer science, software engineering</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Some Thoughts on Academia vs Industry(with a focus on Computer Science)</title></head><body><article class="h-entry">
 
@@ -2077,7 +2077,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/where-did-all-the-writers-go%3F/</link>
 <guid>https://www.alperenkeles.com/blog/where-did-all-the-writers-go%3F/</guid>
 <description><![CDATA[Abundance is the root of dullness. We find scarcity interesting, we uphold scare items and concepts, scarcity is somehow “authentic”, it is…]]></description>
-<pubDate>Sat, 18 Mar 2023 00:00:00 </pubDate>
+<pubDate>Sat, 18 Mar 2023 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Where did all the writers go?</title></head><body><article class="h-entry">
 
@@ -2090,7 +2090,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/afetbilgi%E2%80%99nin-hikayesi./</link>
 <guid>https://www.alperenkeles.com/blog/afetbilgi%E2%80%99nin-hikayesi./</guid>
 <description><![CDATA[afetbilgi.com 7 Şubat 2023 Türkiye saati ile sabah 10.12'de Pazarcık Depremi sürecinin 30. saatinde aşağıdaki Tweet vasıtasıyla duyurularak…]]></description>
-<pubDate>Sat, 18 Feb 2023 00:00:00 </pubDate>
+<pubDate>Sat, 18 Feb 2023 00:00:00</pubDate>
 <category>earthquake</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>AfetBilgi’nin Hikayesi.</title></head><body><article class="h-entry">
 
@@ -2103,7 +2103,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yar%C4%B1m-kalan-projeler%233%3A-fact-checker%E2%80%99s-tool/</link>
 <guid>https://www.alperenkeles.com/blog/yar%C4%B1m-kalan-projeler%233%3A-fact-checker%E2%80%99s-tool/</guid>
 <description><![CDATA[Asıl ismiyle “Fact Checker’s Tool” ya da “FCT”, farklı kişi ve kurumlar tarafından “FactHacker”, “FactChecker”, “Fact Maker” gibi…]]></description>
-<pubDate>Wed, 21 Dec 2022 00:00:00 </pubDate>
+<pubDate>Wed, 21 Dec 2022 00:00:00</pubDate>
 <category>half-finished projects, computer science</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yarım Kalan Projeler#3: Fact Checker’s Tool</title></head><body><article class="h-entry">
 
@@ -2116,7 +2116,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yar%C4%B1m-kalan-projeler%232%3A-learning-from-learners/</link>
 <guid>https://www.alperenkeles.com/blog/yar%C4%B1m-kalan-projeler%232%3A-learning-from-learners/</guid>
 <description><![CDATA[Learning from Learners, kısaca LFL, ortaya çıktığı dönem beni çok heyecanlandırmıştı. Doktoraya yeni başlamanın da etkisiyle çok yeni…]]></description>
-<pubDate>Mon, 19 Dec 2022 00:00:00 </pubDate>
+<pubDate>Mon, 19 Dec 2022 00:00:00</pubDate>
 <category>half-finished projects, computer science, learning from learners</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yarım Kalan Projeler#2: Learning from Learners</title></head><body><article class="h-entry">
 
@@ -2129,7 +2129,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yar%C4%B1m-kalan-projeler%231%3A-cengbook/</link>
 <guid>https://www.alperenkeles.com/blog/yar%C4%B1m-kalan-projeler%231%3A-cengbook/</guid>
 <description><![CDATA[Önce giriş, bu seri ne hakkında?]]></description>
-<pubDate>Sat, 17 Dec 2022 00:00:00 </pubDate>
+<pubDate>Sat, 17 Dec 2022 00:00:00</pubDate>
 <category>half-finished projects, computer science</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yarım Kalan Projeler#1: CengBook</title></head><body><article class="h-entry">
 
@@ -2142,7 +2142,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/a-brief-essay-on-change/</link>
 <guid>https://www.alperenkeles.com/blog/a-brief-essay-on-change/</guid>
 <description><![CDATA[It’s been a long time since I’ve started thinking about change. One thing I realized is even though so much of our lives change, we still…]]></description>
-<pubDate>Sat, 29 Oct 2022 00:00:00 </pubDate>
+<pubDate>Sat, 29 Oct 2022 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A Brief Essay on Change</title></head><body><article class="h-entry">
 
@@ -2155,7 +2155,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/se%C3%A7imler-v2/</link>
 <guid>https://www.alperenkeles.com/blog/se%C3%A7imler-v2/</guid>
 <description><![CDATA[Yaklaşık 18 ay önce bir yazı yazmışım. Geleceğin ne kadar korkunç olduğuna, karar vermenin, verdiğimiz kararların etkisini anlamanın ne…]]></description>
-<pubDate>Mon, 24 Oct 2022 00:00:00 </pubDate>
+<pubDate>Mon, 24 Oct 2022 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Seçimler v2</title></head><body><article class="h-entry">
 
@@ -2168,7 +2168,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/doktorada-1-y%C4%B1l-sonunda-baz%C4%B1-g%C3%B6r%C3%BC%C5%9Fler/</link>
 <guid>https://www.alperenkeles.com/blog/doktorada-1-y%C4%B1l-sonunda-baz%C4%B1-g%C3%B6r%C3%BC%C5%9Fler/</guid>
 <description><![CDATA[Merhabalar! Son yazımdan beri birkaç ay geçti; benim için güzel birkaç aydı, umarım sizler için de öyle olmuştur. Doktoranın 11. ayını…]]></description>
-<pubDate>Wed, 20 Jul 2022 00:00:00 </pubDate>
+<pubDate>Wed, 20 Jul 2022 00:00:00</pubDate>
 <category>phd</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Doktorada 1 Yıl Sonunda Bazı Görüşler</title></head><body><article class="h-entry">
 
@@ -2181,7 +2181,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/doktoram%C4%B1n-i%CC%87lk-6-ay%C4%B1-nas%C4%B1l-ge%C3%A7ti%3F-yo%C4%9Fun%2C-yorgun-ama-mutlu./</link>
 <guid>https://www.alperenkeles.com/blog/doktoram%C4%B1n-i%CC%87lk-6-ay%C4%B1-nas%C4%B1l-ge%C3%A7ti%3F-yo%C4%9Fun%2C-yorgun-ama-mutlu./</guid>
 <description><![CDATA[Bu yazı, aslında Amerika’ya doktoraya geliş sürecimi zaman içerisinde neredeyse anlık olarak ele aldığım bir güncenin 4. yazısı. Geriye…]]></description>
-<pubDate>Tue, 08 Mar 2022 00:00:00 </pubDate>
+<pubDate>Tue, 08 Mar 2022 00:00:00</pubDate>
 <category>phd</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Doktoramın İlk 6 Ayı Nasıl Geçti? Yoğun, Yorgun Ama Mutlu.</title></head><body><article class="h-entry">
 
@@ -2194,7 +2194,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/doktora-kabulleri%3A-kapsaml%C4%B1-rehber/</link>
 <guid>https://www.alperenkeles.com/blog/doktora-kabulleri%3A-kapsaml%C4%B1-rehber/</guid>
 <description><![CDATA[Geçtiğimiz Nisan ayında “Doktora Başvuruları: Kapsamlı Rehber” adı altında başvurular esnasında ihtiyaç duyabileceklerinizi bir kenara…]]></description>
-<pubDate>Sat, 29 Jan 2022 00:00:00 </pubDate>
+<pubDate>Sat, 29 Jan 2022 00:00:00</pubDate>
 <category>phd</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Doktora Kabulleri: Kapsamlı Rehber</title></head><body><article class="h-entry">
 
@@ -2207,7 +2207,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/hat%C4%B1rlamak/</link>
 <guid>https://www.alperenkeles.com/blog/hat%C4%B1rlamak/</guid>
 <description><![CDATA[Bu yazıyı geçmişte birkaç kez daha yazmaya çalıştım. Her seferinde içime sinen bir başlık bulamayıp bırakıyorum. “Beyin ve İlişkilendirme”…]]></description>
-<pubDate>Tue, 25 Jan 2022 00:00:00 </pubDate>
+<pubDate>Tue, 25 Jan 2022 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Hatırlamak</title></head><body><article class="h-entry">
 
@@ -2220,7 +2220,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/lokasyon-bazl%C4%B1-%C3%B6deme-hakk%C4%B1nda-baz%C4%B1-d%C3%BC%C5%9F%C3%BCnceler/</link>
 <guid>https://www.alperenkeles.com/blog/lokasyon-bazl%C4%B1-%C3%B6deme-hakk%C4%B1nda-baz%C4%B1-d%C3%BC%C5%9F%C3%BCnceler/</guid>
 <description><![CDATA[Son günlerde yazılımcı Twitter’ında maaşlarla ilgili genel bir tartışma dönüyor. Bu tarz durumlarda fikirlerimizi Twitter üzerinden yazmaya…]]></description>
-<pubDate>Sun, 16 Jan 2022 00:00:00 </pubDate>
+<pubDate>Sun, 16 Jan 2022 00:00:00</pubDate>
 <category>software engineering</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Lokasyon Bazlı Ödeme Hakkında Bazı Düşünceler</title></head><body><article class="h-entry">
 
@@ -2233,7 +2233,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/proje-g%C3%BCnl%C3%BCkleri%3A-cvdl%28cv-description-language%29%231/</link>
 <guid>https://www.alperenkeles.com/blog/proje-g%C3%BCnl%C3%BCkleri%3A-cvdl%28cv-description-language%29%231/</guid>
 <description><![CDATA[Merhabalar, Proje Günlükleri konseptinin ilk yazısı olduğu için projenin kendisine girmeden biraz daha serinin konseptinden bahsetmek…]]></description>
-<pubDate>Mon, 10 Jan 2022 00:00:00 </pubDate>
+<pubDate>Mon, 10 Jan 2022 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
@@ -2477,7 +2477,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/amerika%E2%80%99da-i%CC%87lk-3-ay%C4%B1m-nas%C4%B1l-ge%C3%A7ti%3F-bu-sefer-oldu-gibi./</link>
 <guid>https://www.alperenkeles.com/blog/amerika%E2%80%99da-i%CC%87lk-3-ay%C4%B1m-nas%C4%B1l-ge%C3%A7ti%3F-bu-sefer-oldu-gibi./</guid>
 <description><![CDATA[Selamlar, geçen 2 ayın yazısını hatırlayanlar vardır belki, farkı görmek isteyenler olabilir ekleyeyim yine.]]></description>
-<pubDate>Sun, 21 Nov 2021 00:00:00 </pubDate>
+<pubDate>Sun, 21 Nov 2021 00:00:00</pubDate>
 <category>phd, us</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Amerika’da İlk 3 Ayım Nasıl Geçti? Bu Sefer Oldu Gibi.</title></head><body><article class="h-entry">
 
@@ -2490,7 +2490,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-property-based-testing%231/</link>
 <guid>https://www.alperenkeles.com/blog/learner%E2%80%99s-guide-to-property-based-testing%231/</guid>
 <description><![CDATA[Property Based Random Testing is a flavor of testing that aims to use higher level specifications for testing instead of hand-writing or…]]></description>
-<pubDate>Wed, 10 Nov 2021 00:00:00 </pubDate>
+<pubDate>Wed, 10 Nov 2021 00:00:00</pubDate>
 <category>software engineering, testing, computer science, learning from learners</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Learner’s Guide to Property Based Testing#1</title></head><body><article class="h-entry">
 
@@ -2503,7 +2503,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/introduction-to-learning-from-learners/</link>
 <guid>https://www.alperenkeles.com/blog/introduction-to-learning-from-learners/</guid>
 <description><![CDATA[So this piece should provide some insight into why we are starting this blog. There are lots of technical blogs and writings all over the…]]></description>
-<pubDate>Mon, 08 Nov 2021 00:00:00 </pubDate>
+<pubDate>Mon, 08 Nov 2021 00:00:00</pubDate>
 <category>software engineering, testing, computer science, learning from learners</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Introduction to Learning from Learners</title></head><body><article class="h-entry">
 
@@ -2516,7 +2516,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/amerika%E2%80%99da-i%CC%87kinci-ay%C4%B1m-nas%C4%B1l-ge%C3%A7ti%3F-bilinmezlikten-bilinirli%C4%9Fe-bir-yolculuk./</link>
 <guid>https://www.alperenkeles.com/blog/amerika%E2%80%99da-i%CC%87kinci-ay%C4%B1m-nas%C4%B1l-ge%C3%A7ti%3F-bilinmezlikten-bilinirli%C4%9Fe-bir-yolculuk./</guid>
 <description><![CDATA[Geçen ay ilk ayımın nasıl geçtiğine dair bir yazı yazmıştım, açıkça bakmak gerekirse fazlasıyla negatifti, buraya gelmenin zorlukları…]]></description>
-<pubDate>Fri, 15 Oct 2021 00:00:00 </pubDate>
+<pubDate>Fri, 15 Oct 2021 00:00:00</pubDate>
 <category>phd, us</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Amerika’da İkinci Ayım Nasıl Geçti? Bilinmezlikten Bilinirliğe Bir Yolculuk.</title></head><body><article class="h-entry">
 
@@ -2529,7 +2529,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/toplu-mail-linki-nas%C4%B1l-haz%C4%B1rlan%C4%B1r%3F/</link>
 <guid>https://www.alperenkeles.com/blog/toplu-mail-linki-nas%C4%B1l-haz%C4%B1rlan%C4%B1r%3F/</guid>
 <description><![CDATA[Önceki yıllarda toplu mail atılması gerektiğinde aşağıdakileri içeren bir belge hazırlanırdı.]]></description>
-<pubDate>Fri, 24 Sep 2021 00:00:00 </pubDate>
+<pubDate>Fri, 24 Sep 2021 00:00:00</pubDate>
 <category>social movements</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Toplu Mail Linki Nasıl Hazırlanır?</title></head><body><article class="h-entry">
 
@@ -2542,7 +2542,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/amerika%E2%80%99da-i%CC%87lk-ay%C4%B1m-nas%C4%B1l-ge%C3%A7ti%3F-%C3%B6%C4%9Fretici%2C-%C5%9Fa%C5%9F%C4%B1rt%C4%B1c%C4%B1-derecede-d%C3%BCr%C3%BCst-bir-an%C4%B1-defteri./</link>
 <guid>https://www.alperenkeles.com/blog/amerika%E2%80%99da-i%CC%87lk-ay%C4%B1m-nas%C4%B1l-ge%C3%A7ti%3F-%C3%B6%C4%9Fretici%2C-%C5%9Fa%C5%9F%C4%B1rt%C4%B1c%C4%B1-derecede-d%C3%BCr%C3%BCst-bir-an%C4%B1-defteri./</guid>
 <description><![CDATA[Selam. Hoş geldin. Eğer uzun süredir beni takip ediyorsan, bu yazıya şaşırmış olabilirsin. Normalde insanlığa faydalı olmaya çalışan bir…]]></description>
-<pubDate>Fri, 24 Sep 2021 00:00:00 </pubDate>
+<pubDate>Fri, 24 Sep 2021 00:00:00</pubDate>
 <category>phd, us</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Amerika’da İlk Ayım Nasıl Geçti? Öğretici, Şaşırtıcı Derecede Dürüst Bir Anı Defteri.</title></head><body><article class="h-entry">
 
@@ -2555,7 +2555,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/the-story-of-deviation-and-returning/</link>
 <guid>https://www.alperenkeles.com/blog/the-story-of-deviation-and-returning/</guid>
 <description><![CDATA[I always loved thinking about philosophical discussions and paradoxes. I am amazed that they are so simple at first glance yet so complex…]]></description>
-<pubDate>Sat, 31 Jul 2021 00:00:00 </pubDate>
+<pubDate>Sat, 31 Jul 2021 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Story of Deviation and Returning</title></head><body><article class="h-entry">
 
@@ -2568,7 +2568,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/odt%C3%BC%E2%80%99de-bilgisayar-m%C3%BChendisli%C4%9Fi%3A-nedir%3F-ne-de%C4%9Fildir%3F/</link>
 <guid>https://www.alperenkeles.com/blog/odt%C3%BC%E2%80%99de-bilgisayar-m%C3%BChendisli%C4%9Fi%3A-nedir%3F-ne-de%C4%9Fildir%3F/</guid>
 <description><![CDATA[Bir süredir yeni gelecek arkadaşlara rehber olmasını dilediğim bir yazı yazmak istiyordum, tercih dönemiyle birleştirmek makul geldiği için…]]></description>
-<pubDate>Wed, 28 Jul 2021 00:00:00 </pubDate>
+<pubDate>Wed, 28 Jul 2021 00:00:00</pubDate>
 <category>computer science, METU</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>ODTÜ’de Bilgisayar Mühendisliği: Nedir? Ne Değildir?</title></head><body><article class="h-entry">
 
@@ -2581,7 +2581,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/vermek-ve-almak%3A-i%CC%87li%C5%9Fkilere-yeni-bir-bak%C4%B1%C5%9F-a%C3%A7%C4%B1s%C4%B1/</link>
 <guid>https://www.alperenkeles.com/blog/vermek-ve-almak%3A-i%CC%87li%C5%9Fkilere-yeni-bir-bak%C4%B1%C5%9F-a%C3%A7%C4%B1s%C4%B1/</guid>
 <description><![CDATA[Önsöz]]></description>
-<pubDate>Tue, 13 Jul 2021 00:00:00 </pubDate>
+<pubDate>Tue, 13 Jul 2021 00:00:00</pubDate>
 <category>social psychology</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Vermek ve Almak: İlişkilere Yeni Bir Bakış Açısı</title></head><body><article class="h-entry">
 
@@ -2594,7 +2594,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz-odt%C3%BC%21/</link>
 <guid>https://www.alperenkeles.com/blog/g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz-odt%C3%BC%21/</guid>
 <description><![CDATA[Bu yazıyı herhalde 6. yazışım, ancak her seferinde tekrar tekrar beğenmediğim için siliyor, siliyor, tekrar yazıyorum. Yaşadığım duyguları…]]></description>
-<pubDate>Mon, 21 Jun 2021 00:00:00 </pubDate>
+<pubDate>Mon, 21 Jun 2021 00:00:00</pubDate>
 <category>METU</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Görüşürüz ODTÜ!</title></head><body><article class="h-entry">
 
@@ -2607,7 +2607,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/uzaktan-e%C4%9Fitimle-ge%C3%A7en-bir-y%C4%B1l%C4%B1n-ard%C4%B1ndan/</link>
 <guid>https://www.alperenkeles.com/blog/uzaktan-e%C4%9Fitimle-ge%C3%A7en-bir-y%C4%B1l%C4%B1n-ard%C4%B1ndan/</guid>
 <description><![CDATA[Bu yazıyı okuyorsanız, öncelikle size teşekkür etmek istiyorum. Şu zor günlerde, psikolojimizin sınırlarının zorlandığı, kendimizi bazen en…]]></description>
-<pubDate>Wed, 19 May 2021 00:00:00 </pubDate>
+<pubDate>Wed, 19 May 2021 00:00:00</pubDate>
 <category>METU</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Uzaktan Eğitimle Geçen Bir Yılın Ardından</title></head><body><article class="h-entry">
 
@@ -2620,7 +2620,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/doktora-ba%C5%9Fvurular%C4%B1%3A-kapsaml%C4%B1-rehber/</link>
 <guid>https://www.alperenkeles.com/blog/doktora-ba%C5%9Fvurular%C4%B1%3A-kapsaml%C4%B1-rehber/</guid>
 <description><![CDATA[Daha önceki yazılarımda da kısaca bahsettiğim gibi, geçtiğimiz dönem içerisinde 7 doktora başvurusu yaptım, bunlardan 2 tanesinden ise…]]></description>
-<pubDate>Tue, 13 Apr 2021 00:00:00 </pubDate>
+<pubDate>Tue, 13 Apr 2021 00:00:00</pubDate>
 <category>phd</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Doktora Başvuruları: Kapsamlı Rehber</title></head><body><article class="h-entry">
 
@@ -2633,7 +2633,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/lisans-ara%C5%9Ft%C4%B1rmalar%C4%B1-rehberi%3A-ad%C4%B1modt%C3%BC-lisans-ara%C5%9Ft%C4%B1rmalar%C4%B1/</link>
 <guid>https://www.alperenkeles.com/blog/lisans-ara%C5%9Ft%C4%B1rmalar%C4%B1-rehberi%3A-ad%C4%B1modt%C3%BC-lisans-ara%C5%9Ft%C4%B1rmalar%C4%B1/</guid>
 <description><![CDATA[Lisans araştırmaları ile ilgili ilk yazımda, neden lisansta araştırma yapmamız gerektiğini, bu tecrübenin bize katacaklarını, ne tip…]]></description>
-<pubDate>Sat, 03 Apr 2021 00:00:00 </pubDate>
+<pubDate>Sat, 03 Apr 2021 00:00:00</pubDate>
 <category>research</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Lisans Araştırmaları Rehberi: AdımODTÜ Lisans Araştırmaları</title></head><body><article class="h-entry">
 
@@ -2646,7 +2646,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/se%C3%A7imler/</link>
 <guid>https://www.alperenkeles.com/blog/se%C3%A7imler/</guid>
 <description><![CDATA[Bazen korkuyorum. Gelecek belirsiz, korkutucu, her bir tercihin kelebek etkisi gibi sonuçlarının bizleri nereye götüreceği o kadar…]]></description>
-<pubDate>Mon, 29 Mar 2021 00:00:00 </pubDate>
+<pubDate>Mon, 29 Mar 2021 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Seçimler</title></head><body><article class="h-entry">
 
@@ -2659,7 +2659,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yurt-d%C4%B1%C5%9F%C4%B1-staj%3A-kabul-ald%C4%B1n%C4%B1z%2C-peki-ya-%C5%9Fimdi%3F/</link>
 <guid>https://www.alperenkeles.com/blog/yurt-d%C4%B1%C5%9F%C4%B1-staj%3A-kabul-ald%C4%B1n%C4%B1z%2C-peki-ya-%C5%9Fimdi%3F/</guid>
 <description><![CDATA[Staj başvuru süreçlerinin yavaştan bittiği ya da son zamanlarına yaklaşıldığı, asıl staja hazırlığın yapıldığı bir noktaya geldik. Vizeler…]]></description>
-<pubDate>Sun, 14 Mar 2021 00:00:00 </pubDate>
+<pubDate>Sun, 14 Mar 2021 00:00:00</pubDate>
 <category>internship, working abroad</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yurt Dışı Staj: Kabul Aldınız, Peki Ya Şimdi?</title></head><body><article class="h-entry">
 
@@ -2672,7 +2672,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/y%C3%BCksek-lisans-doktora-ba%C5%9Fvurular%C4%B1%232%3A-neden-y%C3%BCksek-lisans%3F/</link>
 <guid>https://www.alperenkeles.com/blog/y%C3%BCksek-lisans-doktora-ba%C5%9Fvurular%C4%B1%232%3A-neden-y%C3%BCksek-lisans%3F/</guid>
 <description><![CDATA[Lisans mezuniyeti, pek çoğumuz için hayatımızın en heyecan verici, en kaygı verici, en korkutucu zamanı. Lisanstan mezun olana kadar ne…]]></description>
-<pubDate>Fri, 26 Feb 2021 00:00:00 </pubDate>
+<pubDate>Fri, 26 Feb 2021 00:00:00</pubDate>
 <category>phd</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yüksek Lisans Doktora Başvuruları#2: Neden Yüksek Lisans?</title></head><body><article class="h-entry">
 
@@ -2685,7 +2685,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/y%C3%BCksek-lisans-doktora-ba%C5%9Fvurular%C4%B1%231%3A-%C5%9Fimdi-sizin-akl%C4%B1n%C4%B1zda-2-soru-var/</link>
 <guid>https://www.alperenkeles.com/blog/y%C3%BCksek-lisans-doktora-ba%C5%9Fvurular%C4%B1%231%3A-%C5%9Fimdi-sizin-akl%C4%B1n%C4%B1zda-2-soru-var/</guid>
 <description><![CDATA[Yüksek Lisans/Doktora Nedir? Nasıl Yapılır?]]></description>
-<pubDate>Tue, 23 Feb 2021 00:00:00 </pubDate>
+<pubDate>Tue, 23 Feb 2021 00:00:00</pubDate>
 <category>phd</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yüksek Lisans Doktora Başvuruları#1: Şimdi Sizin Aklınızda 2 Soru Var</title></head><body><article class="h-entry">
 
@@ -2698,7 +2698,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/staj-rehberi%234%E2%80%8A%E2%80%94%E2%80%8Aeski-stajlar/</link>
 <guid>https://www.alperenkeles.com/blog/staj-rehberi%234%E2%80%8A%E2%80%94%E2%80%8Aeski-stajlar/</guid>
 <description><![CDATA[Dünyanın en iyi pazarlamacısı, herkese her ürünü satabilir. Ancak, dünyanın en iyi hazırlanmış özgeçmişi bile, herkesi işe sokmaya yetmez…]]></description>
-<pubDate>Wed, 17 Feb 2021 00:00:00 </pubDate>
+<pubDate>Wed, 17 Feb 2021 00:00:00</pubDate>
 <category>internship</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Staj Rehberi#4 — Eski Stajlar</title></head><body><article class="h-entry">
 
@@ -2711,7 +2711,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/staj-rehberi%233%E2%80%8A%E2%80%94%E2%80%8Aprojeler/</link>
 <guid>https://www.alperenkeles.com/blog/staj-rehberi%233%E2%80%8A%E2%80%94%E2%80%8Aprojeler/</guid>
 <description><![CDATA[Bundan önceki iki yazıda, staj için iyi bir özgeçmiş ve iyi bir niyet mektubunun nasıl hazırlanacağından bahsetmiştim.]]></description>
-<pubDate>Sun, 07 Feb 2021 00:00:00 </pubDate>
+<pubDate>Sun, 07 Feb 2021 00:00:00</pubDate>
 <category>internship</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Staj Rehberi#3 — Projeler</title></head><body><article class="h-entry">
 
@@ -2724,7 +2724,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/staj-rehberi%232%E2%80%8A%E2%80%94%E2%80%8Aniyet-mektubu/</link>
 <guid>https://www.alperenkeles.com/blog/staj-rehberi%232%E2%80%8A%E2%80%94%E2%80%8Aniyet-mektubu/</guid>
 <description><![CDATA[İnternette hızlı bir arama, özgeçmişle ilgili dağınık da olsa pek çok kaynağa ulaşım sağlıyor. Gerekirse yeterli bir arama sonucunda iyi…]]></description>
-<pubDate>Tue, 02 Feb 2021 00:00:00 </pubDate>
+<pubDate>Tue, 02 Feb 2021 00:00:00</pubDate>
 <category>internship, cover letter</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Staj Rehberi#2 — Niyet Mektubu</title></head><body><article class="h-entry">
 
@@ -2737,7 +2737,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/staj-rehberi%231%E2%80%8A%E2%80%94%E2%80%8A-%C3%B6zge%C3%A7mi%C5%9F-haz%C4%B1rlama/</link>
 <guid>https://www.alperenkeles.com/blog/staj-rehberi%231%E2%80%8A%E2%80%94%E2%80%8A-%C3%B6zge%C3%A7mi%C5%9F-haz%C4%B1rlama/</guid>
 <description><![CDATA[Hayal edin, hedefiniz olan şirkette bir insan kaynakları çalışanı olarak yer alıyorsunuz. Staj başvuru döneminin sonlarına doğru, her gün…]]></description>
-<pubDate>Fri, 29 Jan 2021 00:00:00 </pubDate>
+<pubDate>Fri, 29 Jan 2021 00:00:00</pubDate>
 <category>internship, cv, resume</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Staj Rehberi#1 —  Özgeçmiş Hazırlama</title></head><body><article class="h-entry">
 
@@ -2750,7 +2750,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/%C3%B6dedi%C4%9Fimiz-bedeller-mi%2C-%C3%B6deyeceklerimiz-mi%3F/</link>
 <guid>https://www.alperenkeles.com/blog/%C3%B6dedi%C4%9Fimiz-bedeller-mi%2C-%C3%B6deyeceklerimiz-mi%3F/</guid>
 <description><![CDATA[Bir hapishanedeyiz. Beklentilerimizden, hedeflerimizden ve hayallerimizden örülmüş parmaklıkların ardında. Verdiğimiz karar, attığımız…]]></description>
-<pubDate>Fri, 22 Jan 2021 00:00:00 </pubDate>
+<pubDate>Fri, 22 Jan 2021 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
@@ -2846,7 +2846,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/odt%C3%BC%E2%80%99de-uzaktan-g%C3%BCz-d%C3%B6nemi-nas%C4%B1l-bitiyor./</link>
 <guid>https://www.alperenkeles.com/blog/odt%C3%BC%E2%80%99de-uzaktan-g%C3%BCz-d%C3%B6nemi-nas%C4%B1l-bitiyor./</guid>
 <description><![CDATA[Merhabalar, ben Alperen, ODTÜ’de son yılım, okulumu daha iyi bir hale getirmek için çabalıyorum. Benle birlikte, yaklaşık 15 kişilik bir…]]></description>
-<pubDate>Sat, 16 Jan 2021 00:00:00 </pubDate>
+<pubDate>Sat, 16 Jan 2021 00:00:00</pubDate>
 <category>METU</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>ODTÜ’de Uzaktan Güz Dönemi Nasıl Bitiyor.</title></head><body><article class="h-entry">
 
@@ -2859,7 +2859,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/post-covid-monologlar%C4%B1%233%3A-yar%C4%B1n%C4%B1-ka%C3%A7%C4%B1rmak/</link>
 <guid>https://www.alperenkeles.com/blog/post-covid-monologlar%C4%B1%233%3A-yar%C4%B1n%C4%B1-ka%C3%A7%C4%B1rmak/</guid>
 <description><![CDATA[Bugün günlerden 5 Aralık 2021, uyandığımdan beri projeler, ödevler ve derslerle boğuşuyorum. Peki ya sen? Sen ne yaptın bugün, ev…]]></description>
-<pubDate>Mon, 04 Jan 2021 00:00:00 </pubDate>
+<pubDate>Mon, 04 Jan 2021 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Post-Covid Monologları#3: Yarını Kaçırmak</title></head><body><article class="h-entry">
 
@@ -2872,7 +2872,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/odt%C3%BC%E2%80%99de-uzaktan-e%C4%9Fitim-d%C3%B6nemi-nas%C4%B1l-ge%C3%A7iyor%3F/</link>
 <guid>https://www.alperenkeles.com/blog/odt%C3%BC%E2%80%99de-uzaktan-e%C4%9Fitim-d%C3%B6nemi-nas%C4%B1l-ge%C3%A7iyor%3F/</guid>
 <description><![CDATA[12 Mart 2020 Perşembe akşamı okulların 3 haftalık bir ara tatil dönemine girmesi ile başlayan uzaktan eğitim, 9 ay 12 gün sonra hala devam…]]></description>
-<pubDate>Wed, 23 Dec 2020 00:00:00 </pubDate>
+<pubDate>Wed, 23 Dec 2020 00:00:00</pubDate>
 <category>METU</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>ODTÜ’de Uzaktan Eğitim Dönemi Nasıl Geçiyor?</title></head><body><article class="h-entry">
 
@@ -2885,7 +2885,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/lisans-ara%C5%9Ft%C4%B1rmalar%C4%B1%3A-giri%C5%9F-rehberi/</link>
 <guid>https://www.alperenkeles.com/blog/lisans-ara%C5%9Ft%C4%B1rmalar%C4%B1%3A-giri%C5%9F-rehberi/</guid>
 <description><![CDATA[Bu yazıya küçük bir dipnotla başlamak iyi olacaktır diye düşünüyorum. Elbette ki kendime bir araştırmacı diyecek niteliklere sahip değilim…]]></description>
-<pubDate>Thu, 17 Dec 2020 00:00:00 </pubDate>
+<pubDate>Thu, 17 Dec 2020 00:00:00</pubDate>
 <category>research</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Lisans Araştırmaları: Giriş Rehberi</title></head><body><article class="h-entry">
 
@@ -2898,7 +2898,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/post-covid-monologlar%C4%B1%231%3A-unutulan-vedalar/</link>
 <guid>https://www.alperenkeles.com/blog/post-covid-monologlar%C4%B1%231%3A-unutulan-vedalar/</guid>
 <description><![CDATA[Salgının 9. ayını geçirdiğimiz şu günlerde, her geçen gün bir öncekinden daha ağır, daha yorucu, daha zor geçiyor.]]></description>
-<pubDate>Sat, 12 Dec 2020 00:00:00 </pubDate>
+<pubDate>Sat, 12 Dec 2020 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Post-Covid Monologları#1: Unutulan Vedalar</title></head><body><article class="h-entry">
 
@@ -2911,7 +2911,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yurt-d%C4%B1%C5%9F%C4%B1-staj%3A-geni%C5%9Fletilmi%C5%9F-rehber/</link>
 <guid>https://www.alperenkeles.com/blog/yurt-d%C4%B1%C5%9F%C4%B1-staj%3A-geni%C5%9Fletilmi%C5%9F-rehber/</guid>
 <description><![CDATA[İlk yurt dışı stajıma gittiğimde, küçük çaplı bir yurt dışı staj yazısı yazmaya çabalamıştım, görece başarısız sonucumu şuradan…]]></description>
-<pubDate>Wed, 09 Dec 2020 00:00:00 </pubDate>
+<pubDate>Wed, 09 Dec 2020 00:00:00</pubDate>
 <category>internship, working abroad</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yurt Dışı Staj: Genişletilmiş Rehber</title></head><body><article class="h-entry">
 
@@ -2924,7 +2924,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/atam-ne-derdi/</link>
 <guid>https://www.alperenkeles.com/blog/atam-ne-derdi/</guid>
 <description><![CDATA[Her 9 Kasım akşamı, hikayeler, gönderiler, fotoğraflarla doluyor sosyal medya. Dün akşam da farklı değildi benim için, bir farklılık…]]></description>
-<pubDate>Tue, 10 Nov 2020 00:00:00 </pubDate>
+<pubDate>Tue, 10 Nov 2020 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Atam Ne Derdi</title></head><body><article class="h-entry">
 
@@ -2937,7 +2937,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/karantina-g%C3%BCnlerinde-akademik-d%C3%BCr%C3%BCstl%C3%BCk/</link>
 <guid>https://www.alperenkeles.com/blog/karantina-g%C3%BCnlerinde-akademik-d%C3%BCr%C3%BCstl%C3%BCk/</guid>
 <description><![CDATA[İnsanlık tarihinde oluşturduğumuz tüm sistemler, bir çeşit güven duygusuna, güven inancına dayanıyor.]]></description>
-<pubDate>Fri, 05 Jun 2020 00:00:00 </pubDate>
+<pubDate>Fri, 05 Jun 2020 00:00:00</pubDate>
 <category>academia</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Karantina Günlerinde Akademik Dürüstlük</title></head><body><article class="h-entry">
 
@@ -2950,7 +2950,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/k%C4%B1r-aynalar%C4%B1/</link>
 <guid>https://www.alperenkeles.com/blog/k%C4%B1r-aynalar%C4%B1/</guid>
 <description><![CDATA[Hayatta bazı kavramlar vardır; toplumun, insan psikolojisinin, insan evriminin en temelinde yer alır, köklerine dokunurlar. Doğduğumuz…]]></description>
-<pubDate>Sat, 27 Jul 2019 00:00:00 </pubDate>
+<pubDate>Sat, 27 Jul 2019 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Kır Aynaları</title></head><body><article class="h-entry">
 
@@ -2963,7 +2963,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/kaos-ve-d%C3%BCzen/</link>
 <guid>https://www.alperenkeles.com/blog/kaos-ve-d%C3%BCzen/</guid>
 <description><![CDATA[Önemli Not: Bu yazı yazarın bir farkındalık yaşadığı andaki adrenalini sonucu yazılmıştır. Gerçekleri ve bilgileri değil, yazarın kişisel…]]></description>
-<pubDate>Wed, 17 Jul 2019 00:00:00 </pubDate>
+<pubDate>Wed, 17 Jul 2019 00:00:00</pubDate>
 <categor</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Kaos ve Düzen</title></head><body><article class="h-entry">
 
@@ -2976,7 +2976,7 @@ on the repository if you like the project!
 <link>https://www.alperenkeles.com/blog/yurt-d%C4%B1%C5%9F%C4%B1nda-staj/</link>
 <guid>https://www.alperenkeles.com/blog/yurt-d%C4%B1%C5%9F%C4%B1nda-staj/</guid>
 <description><![CDATA[Öncelikle merhabalar, bu yazıyı okuyorsanız, bu demektir ki hayatta şu ana kadar kurduğunuz konfor alanının dışına çıkmayı, akranlarınızın…]]></description>
-<pubDate>Sun, 16 Jun 2019 00:00:00 </pubDate>
+<pubDate>Sun, 16 Jun 2019 00:00:00</pubDate>
 <category>internship, working abroad</category>
 <content:encoded><![CDATA[<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Yurt Dışında Staj</title></head><body><article class="h-entry">
 
