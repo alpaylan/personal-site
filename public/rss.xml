@@ -12,7 +12,7 @@
 <description><![CDATA[his blog post introduces Devy, the interactive blog engine I’ve been working on. Devy is a static site generator that allows you to write interactive blog p]]></description>
 <pubDate>Thu, 11 Apr 2024 00:00:00 GMT</pubDate>
 <category>devy, static site generator</category>
-<content:encoded><![CDATA[<meta charset="UTF-8" ></meta>
+<content:encoded><![CDATA[
 <h1 id="introducing-devy-written-using-devy">Introducing Devy, written
 using Devy!</h1>
 <p><img src="https://github.com/alpaylan/devy/blob/630d2519cc3e62458f30e689470d2b6c34403a03/devy-logo.png?raw=true" 
