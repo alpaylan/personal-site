@@ -1,13 +1,13 @@
 const data = [
   {
-    id: 'huffman',
-    title: "Learner's Guide to Compression Algorithms",
-    link: '/blog/huffman',
-    date: '2024-04-15',
-    desc: "We all are familiar with compression, it's one of the glues of the software world, it saves us storage space, bandwidth,",
+    id: 'devy',
+    title: "Introducing Devy, written using Devy!",
+    link: '/blog/devy',
+    date: '2024-04-11',
+    desc: "his blog post introduces Devy, the interactive blog engine I’ve been working on. Devy is a static site generator that allows you to write interactive blog p",
     lang: 'en',
-    tags: ['learners guide', 'compression algorithms'],
-    type: 'tutorial'
+    tags: ['devy', 'static site generator'],
+    type: 'project'
   },
   {
     id: 'fp-roadmap',
