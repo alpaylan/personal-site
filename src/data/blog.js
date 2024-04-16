@@ -1,5 +1,15 @@
 const data = [
   {
+    id: 'paintbrush',
+    title: "Solving Algorithmic Problems: Painting a Grid",
+    link: '/blog/paintbrush',
+    date: '2024-04-16',
+    desc: "Earlier today, I saw a cute little puzzle on Reddit. The puzzle is pretty simple, we have a 3x3 grid where each square is either pink or turquoise. We are also given a target grid with a different configuration of colors. Finally, we can use 3 horizontal brushes(A, B, and C) that is pink, or 3 vertical brushes(D, E, and F) that is turquoise. The goal is to find the minimum number of brush strokes required to paint the target grid.",
+    lang: 'en',
+    tags: ['puzzle', 'algorithms'],
+    type: 'project'
+  },
+  {
     id: 'devy',
     title: "Introducing Devy, written using Devy!",
     link: '/blog/devy',
