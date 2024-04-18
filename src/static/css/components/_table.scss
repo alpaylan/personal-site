@@ -81,20 +81,51 @@
 			}
 		}
 
-		&.celltag {
-			font-size: 0.9em;
-			padding: 0.2em 0.6em;
-			border-radius: 0.3em;
-			color: _palette(bg);
-			&.tutorial {
-			  background-color: #054e1c;
-			}
-			&.project {
-			  background-color: #2f013b;
-			}
-			&.roadmap {
-			  background-color: #4a0404;
-			}
+		&.list {
+			@include breakpoint(medium) {
+				th {
+					display: none;
+				}
 
+				tbody {
+					tr {
+						td {
+							&:nth-child(1) {
+								display: block;
+								width: 90%;
+							}
+							&:nth-child(2) {
+								min-width: 33%;
+								display: block;
+								float: left;
+							}
+
+							&:nth-child(3) {
+								display: flex;
+								float: left;
+							}
+							&:nth-child(4) {
+								display: flex;
+								float: left;
+							}
+							&:nth-child(5) {
+								display: flex;
+								float: left;
+								// Add eye icon
+								&:before {
+									content: "\f06e";
+									font-family: 'Font Awesome 5 Free';
+									font-weight: 900;
+									margin-right: 0.5em;
+								}
+
+							}
+						}
+					}
+				}
+
+				
+			}			
 		}
+
 	}

@@ -6,7 +6,7 @@
   overflow-y: scroll;
   border: 1px solid #e6e6e6;
   padding: 2em;
- 
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -24,14 +24,16 @@
 
 .blogtable {
   margin-right: 2em;
+
   @include breakpoint(large) {
-    margin-left: 2em;
+    margin: 1em
   }
 }
 
 
 .articlelist {
   margin-right: 2em;
+
   @include breakpoint(large) {
     margin-left: 2em;
   }
@@ -39,6 +41,10 @@
 
 .resume {
   margin: 2em;
+
+  @include breakpoint(small) {
+    margin: 1em;
+  }
 
   .experiences {
     border: solid 1px _palette(border);
@@ -81,27 +87,28 @@
 
 }
 
-  .articlelist {
-    
-    margin: 2em;
-    width: 100%;
+.articlelist {
+
+  border-collapse: collapse;
+
+
+  margin: 2em;
+  width: 100%;
+
+  @include breakpoint(medium) {
+    margin: 0;
+
+  }
+
+  .articledate {
+    width: 20%;
+  }
+
+  .articletitle {
+    width: 40%;
+
     @include breakpoint(medium) {
-      margin: 0;
-      
-    }
-
-    .articledate {
-      width: 30%;
-      @include breakpoint(medium) {
-        display: none;
-      }
-    }
-
-    .articletitle {
-      width: 50%;
-      
-      @include breakpoint(medium) {
-        width: 40%;
-      }
+      width: 40%;
     }
   }
+}

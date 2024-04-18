@@ -23,6 +23,10 @@
 		.title {
 			text-align: center;
 			font-size: 1.4em;
+
+			@include breakpoint(small) {
+				font-size: 1.2em;
+			}
 		}
 
 	}
@@ -101,17 +105,29 @@
 	.degree {
 		margin-bottom: .1em;
 		font-size: 1em;
+
+		@include breakpoint(small) {
+			font-size: 0.8em;
+		}
 	}
 
 	.date {
 		font-weight: normal;
 		margin-bottom: .1em;
 		font-size: 1em;
+		
+		@include breakpoint(small) {
+			font-size: 0.8em;
+		}
 	}
 
 	.school {
 		padding-top: 0.3em;
 		margin-bottom: 1em;
+
+		@include breakpoint(small) {
+			font-size: 0.8em;
+		}
 	}
 }
 

@@ -22,7 +22,7 @@ const Job = ({ data }) => (
       <h4 className="date"> {data.date}</h4>
       </div>
       <div style={{ display: "flex", flexGrow: "row", justifyContent: "space-between"}}>
-      <p className="school">{data.position}</p>
+      <p className="school" style={{ maxWidth: "60%"}}>{data.position}</p>
       <p className="school">{data.location} </p>
       </div>
       {(data.keywords && <Keywords data={data.keywords} />)}

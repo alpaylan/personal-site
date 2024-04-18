@@ -35,6 +35,8 @@ const sortDataBy = (data, sorting, ascending) => {
         return data.sort((a, b) => ascend * (a.title.localeCompare(b.title)));
     } else if (sorting === "type") {
         return data.sort((a, b) => ascend * (nullToChar(a.type).localeCompare(nullToChar(b.type))));
+    } else if (sorting === "lang") {
+        return data.sort((a, b) => ascend * (nullToChar(a.lang).localeCompare(nullToChar(b.lang))));
     }
 };
 
@@ -95,6 +97,7 @@ export const ArticleList = (props) => {
                 <tr>
                     <th onClick={() => setSortFn("title")}>Title</th>
                     <th className='articledate' onClick={() => setSortFn("date")}>Date</th>
+                    <th onClick={() => setSortFn("lang")}>Language</th>
                     <th onClick={() => setSortFn("type")}>Type</th>
                     <th onClick={() => setSortFn("views")}>Views</th>
                 </tr>
@@ -104,6 +107,7 @@ export const ArticleList = (props) => {
                     <tr key={project.title}>
                         <td className='articletitle'><Link to={encodeURI(`/blog/${project.id}`)}>{project.title}</Link></td>
                         <td className='articledate'>{new Date(project.date).toDateString().slice(4)}</td>
+                        <td><span className={`celltag ${project.lang}`}>{project.lang}</span></td>
                         <td><span className={`celltag ${project.type}`}>{project.type}</span></td>
                         <td>{project.views}</td>
                     </tr>
@@ -115,7 +119,6 @@ export const ArticleList = (props) => {
 
 
 const BlogPage = () => {
-    const [currentView, setCurrentView] = React.useState("listview");
     return (
         <Main
             title="Blog"
@@ -123,20 +126,9 @@ const BlogPage = () => {
             hideBar={true}
         >
             <div className="blogpage">
-                {/* <div className="view-switcher">
-                    <div className="cardview-switcher" onClick={() => setCurrentView("cardview")}>Cardview <FontAwesomeIcon icon="fa-solid fa-th-large" /></div>
-                    <div className="listview-switcher" onClick={() => setCurrentView("listview")}>Listview <FontAwesomeIcon icon="fa-solid fa-list" /></div>
-                </div> */}
-                {
-                    currentView === "listview" ?
-                        <div className="articlelist">
-                            <ArticleList />
-                        </div>
-                        :
-                        <div className="cardview">
-                            <ArticleCards />
-                        </div>
-                }
+                <div className="articlelist">
+                    <ArticleList />
+                </div>
             </div>
         </Main>
     )

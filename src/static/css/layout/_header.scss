@@ -8,6 +8,9 @@
 
 	body {
 		padding-top: 8vh;
+		@include breakpoint(medium) {
+			padding-top: 2.75em;
+		}
 	}
 
 	#header {
