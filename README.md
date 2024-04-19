@@ -10,16 +10,16 @@ To run, you can do `npm i && npm run start`.
 ### UI
 
 - [ ] Add optional dark mode
-- [ ] Fix navbar length on mobile
-- [ ] Make resume font smaller on mobile
+- [x] Fix navbar length on mobile
+- [x] Make resume font smaller on mobile
 
 ### Blog
 
-- [ ] Make the table mobile-friendly
+- [x] Make the table mobile-friendly
 - [ ] Indicate headers to be clickable
 - [ ] Add filter/search
-- [ ] Fix not opening links
-- [ ] Add language
+- [?] Fix not opening links
+- [x] Add language
 - [ ] Add tags
 - [ ] Add newsletter
 - [ ] Add series capability

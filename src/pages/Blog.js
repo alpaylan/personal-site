@@ -16,9 +16,9 @@ library.add(far, fas, fab);
 
 const ArticlesBar = (props) => (
   <article className="articlebar" id="articles">
-    <h2 data-testid="heading">Articles</h2>
+    <h2 id="heading">Articles</h2>
     {data.map((project) => (
-      <p
+      <div
         className='project-title'
         key={project.title}
         onClick={() => {
@@ -26,8 +26,22 @@ const ArticlesBar = (props) => (
           window.scrollTo(0, 0);
           window.history.pushState({}, '', encodeURI(`/blog/${project.id}`));
         }}
-        style={{ cursor: 'pointer', fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal' }}
-      >{project.title}</p>
+        style={{
+          cursor: 'pointer',
+          fontSize: "1em",
+          fontWeight: props.selected === data.indexOf(project) ? 'bold' : 'normal',
+        }}
+      >
+        {project.title}
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}
+        >
+          <span style={{ fontSize: '0.8em' }}>{project.date}</span>
+          <div>
+            <span className={`celltag ${project.lang}`} style={{ fontSize: '0.8em', marginLeft: '1em' }}>{project.lang}</span>
+            <span className={`celltag ${project.type}`} style={{ fontSize: '0.8em', marginLeft: '1em' }}>{project.type}</span>
+          </div>
+        </div>
+      </div>
     ))}
   </article>
 );
@@ -63,7 +77,7 @@ const Blog = () => {
       hideBar={true}
     >
       <div className="blogpage">
-          <ArticlesBar selected={selected} setSelected={setSelected} />
+        <ArticlesBar selected={selected} setSelected={setSelected} />
         <BlogPost
           data={data[selected]}
           key={data[selected].title}

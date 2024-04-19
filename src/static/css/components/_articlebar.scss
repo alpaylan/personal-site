@@ -1,14 +1,29 @@
 // About page (/about)
 
 .articlebar {
-  max-width: 20%;
+  max-width: 30%;
   max-height: 92vh;
   overflow-y: scroll;
   border: 1px solid #e6e6e6;
-  padding: 2em;
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+
+  h2 {
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bold;
+  }
+
+  .project-title {
+    padding: 1em;
+    margin-bottom: 0;
+    &:hover {
+      transition: background-color 0.5s;
+      background-color: #e6e6e6;
+      border-radius: 0.5em;
+    }
   }
 }
 
