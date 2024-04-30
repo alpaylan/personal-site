@@ -1,5 +1,15 @@
 const data = [
   {
+    id: 'distributed-paper-stacks',
+    title: "Reading Stacks Season 2: Distributed Paper Stacks",
+    link: '/blog/distributed-paper-stacks',
+    date: '2024-04-30',
+    desc: "Earlier today, I saw a cute little puzzle on Reddit. The puzzle is pretty simple, we have a 3x3 grid where each square is either pink or turquoise. We are also given a target grid with a different configuration of colors. Finally, we can use 3 horizontal brushes(A, B, and C) that is pink, or 3 vertical brushes(D, E, and F) that is turquoise. The goal is to find the minimum number of brush strokes required to paint the target grid.",
+    lang: 'en',
+    tags: ['distributed systems', 'reading group'],
+    type: 'announcement'
+  },
+  {
     id: 'paintbrush',
     title: "Solving Algorithmic Problems: Painting a Grid",
     link: '/blog/paintbrush',
