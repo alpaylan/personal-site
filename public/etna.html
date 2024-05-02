@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Stacks Season 2: Distributed Paper Stacks</title>
+    <style>
+        :root {
+            font-family: monospace;
+            width: 60%;
+            margin: 0 auto;
+
+            @media screen and (max-width: 768px){
+                width: 90%;
+            }
+
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .summary {
+            display: block;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<h1 id="etna-improvements">ETNA Improvements</h1>
+<p>ETNA is an evaluation and analysis platform for Property-Based
+Testing Tools. It provides (1) a modular interface for adding new
+languages and new testing frameworks, (2) several testing workloads
+replicated in different languages, (3) experimentation primitives for
+running tests and collecting results, and (4) visualization tools for
+comparing the results of different tools.</p>
+<p>ETNA was introduced in ICFP 2023 with the paper <a
+href="https://dl.acm.org/doi/abs/10.1145/3607860#sec-cit">Etna: An
+Evaluation Platform for Property-Based Testing (Experience Report)</a>.
+The paper describes the motivation behind ETNA, several design
+considerations, as well as experiments in Coq and Haskell as case
+studies. ETNA code lies in the <a
+href="https://github.com/jwshii/etna">etna repository</a>.</p>
+<p>The rest of this document outlines several areas of improvement we
+plan to add in the future.</p>
+<h2 id="improvements">Improvements</h2>
+<p>First set of improvements are orthogonal to the existing ETNA
+codebase. They are extensions to the existing infrastructure.</p>
+<ul>
+<li><strong>Adding new testing workloads:</strong> Adding a new testing
+workload is comprised of 4 steps. (1) Picking a program/data
+structure/algorithm that is amenable to property-based testing. (2)
+Implementing the program as well as its specifications as property-based
+tests. (3) Injecting bugs into the code. (4) Writing generators for the
+data structures used in the program.</li>
+<li><strong>Adding new languages:</strong> We have currently implemented
+ETNA interfaces for Coq, Haskell, and Racket. Within my plans, I have
+<code>Rust</code>, <code>Python</code>, <code>Typescript</code> as
+potential targets in the near future. There is also some WIP work on
+<code>OCaml</code>. You may also propose your favorite language to be
+added.</li>
+</ul>
+<p>The second set of improvements are about the creating a better
+infrastructure for ETNA.</p>
+<ul>
+<li><strong>Reproducible and Robust Testing:</strong> Currently, ETNA
+testing infrastructure is rather fragile. We store experiment results in
+JSON files and we do not keep metadata related to the tests. The plan is
+to add an SQLite database backend to store the results, as well as
+various test metadata such as a snapshot of the codebase for the test,
+the versions of the tools used, etc.</li>
+<li><strong>Robust Code Mutation Infrastructure:</strong> I have some
+unfinished work on separating the code mutation system we use in ETNA as
+a command-line tool. The current WIP is in <a
+href="https://github.com/alpaylan/mutant-rs">this repository</a>. There
+is also <a
+href="https://docs.google.com/document/d/18Iroz6n5SfUtDQAmluY_FG6GEuxnIYCHlVuHf_syYn4/edit?usp=sharing">a
+detailed proposal</a> for the tool. The plan is to separate the mutation
+system from ETNA and make it a standalone tool that can be used in other
+projects as well.</li>
+<li><strong>Better Visualizations:</strong> Harry Goldstein(a postdoc
+that will be at UMD next year) has created <a
+href="https://harrisongoldste.in/papers/uist23.pdf">Tyche</a>, at tool
+for visualizing the results of property-based testing in Hypothesis. We
+plan to integrated Tyche style visualizations with ETNA, as well as
+making the current visualization/analysis tools in ETNA more general and
+more user-friendly.</li>
+</ul>
+<p>If you’re interested in getting involved with ETNA, please reach out
+to me. I’m happy to help you get started with the codebase, as well as
+discuss potential projects you can work on.</p>
+<p>My email: <a href="mailto:akeles@umd.edu">akeles@umd.edu</a></p>
+<ul>
+<li>Alperen Keles</li>
+</ul>
