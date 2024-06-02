@@ -1,5 +1,15 @@
 const data = [
   {
+    id: 'puzzles-and-algorithms',
+    title: "Puzzles as Algorithmic Problems",
+    link: '/blog/puzzles-and-algorithms',
+    date: '2024-06-02',
+    desc: "This article is a brief advocacy for the use of puzzles as algorithmic problems for learning purposes as an alternative to the current style of Competitive Programming(CP) or Mathematics problems",
+    lang: 'en',
+    tags: ['competitive programming', 'algorithms'],
+    type: 'discussion'
+  },
+  {
     id: 'distributed-paper-stacks',
     title: "Reading Stacks Season 2: Distributed Paper Stacks",
     link: '/blog/distributed-paper-stacks',
