@@ -1,5 +1,15 @@
 const data = [
   {
+    id: 'experience',
+    title: "Yazılımda Tecrübenin Anlamsızlığı",
+    link: '/blog/experience',
+    date: '2024-06-28',
+    desc: "Bu yazıyı en başta “Yıllar Geçer, İlanlar Kalır” ismiyle çok daha detaylı ve resmi bir dil ile yazmaya başlamıştım, bugünkü modum ona hiç uygun olmadığı için daha keskin bir dille sıfırdan yazmaya karar verdim.",
+    lang: 'tr',
+    tags: ['software engineering'],
+    type: 'discussion'
+  },
+  {
     id: 'puzzles-and-algorithms',
     title: "Puzzles as Algorithmic Problems",
     link: '/blog/puzzles-and-algorithms',
