@@ -26,16 +26,7 @@ const BlogPost = (props) => {
       post.current.append(documentFragment);
       hljs.highlightAll();
     });
-    
-    fetch('https://alperenkelescom.fly.dev/view', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ "post-id": id })
-    });
 
-    
   }, [id]);
 
   return (

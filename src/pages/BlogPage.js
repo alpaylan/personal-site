@@ -29,8 +29,6 @@ const sortDataBy = (data, sorting, ascending) => {
 
     if (sorting === "date") {
         return data.sort((a, b) => ascend * (new Date(b.date) - new Date(a.date)));
-    } else if (sorting === "views") {
-        return data.sort((a, b) => ascend * (b.views - a.views));
     } else if (sorting === "title") {
         return data.sort((a, b) => ascend * (a.title.localeCompare(b.title)));
     } else if (sorting === "type") {
@@ -40,48 +38,10 @@ const sortDataBy = (data, sorting, ascending) => {
     }
 };
 
-const dateString = (date) => {
-    return new Date(date).toDateString();
-};
-
-const fetchViews = async () => {
-    let response = await fetch('https://alperenkelescom.fly.dev/views', {
-        method: 'GET',
-    });
-    let data = await response.json();
-    data['timestamp'] = new Date().getTime();
-    localStorage.setItem("blogData", JSON.stringify(data));
-    return data;
-};
-
 export const ArticleList = (props) => {
     const [sorting, setSorting] = React.useState(props.sorting || "date");
     const [ascending, setAscending] = React.useState(true);
-    const [augmentedData, setAugmentedData] = React.useState(null);
-    const [sortedData, setSortedData] = React.useState(null);
-
-    useEffect(() => {
-        // Check if views are up to date
-        fetchViews().then((data) => {
-            console.log(data);
-            staticData.forEach((project) => {
-                let localProject = data.find((v) => v._id === project.id);
-
-                if (localProject) {
-                    project.views = localProject.views;
-                } else {
-                    project.views = 0;
-                }
-            });
-            setAugmentedData([...staticData]);
-        });
-    }, []);
-
-    useEffect(() => {
-        if (augmentedData) {
-            setSortedData(sortDataBy(augmentedData, sorting, ascending).slice(0, props.limit || augmentedData.length));
-        }
-    }, [augmentedData, sorting, ascending]);
+    const [sortedData, setSortedData] = React.useState(sortDataBy(staticData, sorting, ascending).slice(0, props.limit || staticData.length));
 
     const setSortFn = (directive) => {
         setSorting(directive);
@@ -99,7 +59,6 @@ export const ArticleList = (props) => {
                     <th className='articledate' onClick={() => setSortFn("date")}>Date</th>
                     <th onClick={() => setSortFn("lang")}>Language</th>
                     <th onClick={() => setSortFn("type")}>Type</th>
-                    <th onClick={() => setSortFn("views")}>Views</th>
                 </tr>
             </thead>
             <tbody>
@@ -109,7 +68,6 @@ export const ArticleList = (props) => {
                         <td className='articledate'>{new Date(project.date).toDateString().slice(4)}</td>
                         <td><span className={`celltag ${project.lang}`}>{project.lang}</span></td>
                         <td><span className={`celltag ${project.type}`}>{project.type}</span></td>
-                        <td>{project.views}</td>
                     </tr>
                 ))}
             </tbody>
