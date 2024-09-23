@@ -16,6 +16,42 @@
     <pre id="violationsOutput"></pre>
 
     <script>
+
+        function monthToTurkishMonth (month) {
+            switch (month) {
+                case 1:
+                    return "Ocak";
+                case 2:
+                    return "Şubat";
+                case 3:
+                    return "Mart";
+                case 4:
+                    return "Nisan";
+                case 5:
+                    return "Mayıs";
+                case 6:
+                    return "Haziran";
+                case 7:
+                    return "Temmuz";
+                case 8:
+                    return "Ağustos";
+                case 9:
+                    return "Eylül";
+                case 10:
+                    return "Ekim";
+                case 11:
+                    return "Kasım";
+                case 12:
+                    return "Aralık";
+                default:
+                    return "Unknown";
+            }
+        }
+
+        function dateToString(date) {
+            return `${date.getDate()} ${monthToTurkishMonth(date.getMonth() + 1)} ${date.getFullYear()}`;
+        }
+
         function indexToColumn(index) {
             let column = '';
             while (index > 0) {
@@ -116,11 +152,7 @@
                                 row: row + 1,
                                 column: C + 1,
                                 value: value,
-                                message: `${value} is working on ${sheetData[`${otherWorker.row + 1},1`].date.toLocaleDateString('tr-TR', {
-                                    timeZone: 'UTC',
-                                })} and ${sheetData[`${row + 1},1`].date.toLocaleDateString('tr-TR', {
-                                    timeZone: 'UTC',
-                                })} :: Excel locations (${otherWorker.row + 1}, ${indexToColumn(otherWorker.column)}) (${row + 1}, ${indexToColumn(C + 1)})`
+                                message: `${value} <b>${dateToString(sheetData[`${otherWorker.row + 1},1`].date)}</b> ve <b>${dateToString(sheetData[`${row + 1},1`].date)}</b> tarihlerinde çalışıyor. Excel: <b>(${otherWorker.row + 1}, ${indexToColumn(otherWorker.column)}) (${row + 1}, ${indexToColumn(C + 1)})</b>`
                             });
                         }
 
@@ -130,7 +162,7 @@
 
                 // Output rule violations
                 const output = document.getElementById('violationsOutput');
-                output.textContent = ruleViolations.map(v => `- ${v.message}`).join('\n');
+                output.innerHTML = ruleViolations.map(v => `- ${v.message}`).join('\n');
 
                 // Save violations to a txt file
                 // const violationsBlob = new Blob([output.textContent], { type: 'text/plain' });
