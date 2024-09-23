@@ -49,7 +49,10 @@
         }
 
         function dateToString(date) {
-            return `${date.getDate()} ${monthToTurkishMonth(date.getMonth() + 1)} ${date.getFullYear()}`;
+            let iso = date.toISOString().split('T')[0];
+            let [year, month, day] = iso.split('-');
+            return `${day} ${monthToTurkishMonth(parseInt(month))} ${year}`;
+            // return `${date.getDate()} ${monthToTurkishMonth(date.getMonth() + 1)} ${date.getFullYear()}`;
         }
 
         function indexToColumn(index) {
