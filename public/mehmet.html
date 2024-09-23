@@ -116,7 +116,11 @@
                                 row: row + 1,
                                 column: C + 1,
                                 value: value,
-                                message: `${value} is working on ${sheetData[`${otherWorker.row + 1},1`].date.toLocaleDateString('tr-TR')} and ${sheetData[`${row + 1},1`].date.toLocaleDateString('tr-TR')} :: Excel locations (${otherWorker.row + 1}, ${indexToColumn(otherWorker.column)}) (${row + 1}, ${indexToColumn(C + 1)})`
+                                message: `${value} is working on ${sheetData[`${otherWorker.row + 1},1`].date.toLocaleDateString('tr-TR', {
+                                    timeZone: 'UTC',
+                                })} and ${sheetData[`${row + 1},1`].date.toLocaleDateString('tr-TR', {
+                                    timeZone: 'UTC',
+                                })} :: Excel locations (${otherWorker.row + 1}, ${indexToColumn(otherWorker.column)}) (${row + 1}, ${indexToColumn(C + 1)})`
                             });
                         }
 
