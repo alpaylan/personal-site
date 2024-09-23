@@ -16,6 +16,20 @@
     <pre id="violationsOutput"></pre>
 
     <script>
+        function indexToColumn(index) {
+            let column = '';
+            while (index > 0) {
+                const remainder = index % 26;
+                if (remainder === 0) {
+                    column = 'Z' + column;
+                    index = Math.floor(index / 26) - 1;
+                } else {
+                    column = String.fromCharCode(remainder + 64) + column;
+                    index = Math.floor(index / 26);
+                }
+            }
+            return column;
+        }
 
         function processExcel() {
             const fileInput = document.getElementById('fileUpload').files[0];
@@ -93,16 +107,16 @@
                         const value = cell.v;
                         const otherWorker = currentWorkers.find(worker => worker.value === value);
                         if (otherWorker) {
-                            if (["A", "B", "C"].includes(otherWorker.value)) {
+                            if (["A", "B", "C", "D"].includes(otherWorker.value)) {
                                 continue;
                             }
                                 ruleViolations.push({
                                     oldRow: otherWorker.row,
                                     oldColumn: otherWorker.column,
-                                    row: row,
+                                    row: row + 1,
                                     column: C + 1,
                                     value: value,
-                                    message: `${value} is working on ${sheetData[`${otherWorker.row},1`].date.toLocaleDateString('en-US')} and ${sheetData[`${row},1`].date.toLocaleDateString('en-US')} :: Excel locations (${otherWorker.row}, ${otherWorker.column}) (${row}, ${C + 1})`
+                                    message: `${value} is working on ${sheetData[`${otherWorker.row + 1},1`].date.toLocaleDateString('tr-TR')} and ${sheetData[`${row + 1},1`].date.toLocaleDateString('tr-TR')} :: Excel locations (${otherWorker.row + 1}, ${indexToColumn(otherWorker.column)}) (${row + 1}, ${indexToColumn(C + 1)})`
                                 });
                         }
 
