@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Processing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <h1>Excel Processing with Violations</h1>
+    <input type="file" id="fileUpload" />
+    <button onclick="processExcel()">Process File</button>
+    <pre id="violationsOutput"></pre>
+
+    <script>
+
+        function processExcel() {
+            const fileInput = document.getElementById('fileUpload').files[0];
+            if (!fileInput) {
+                alert('Please upload an Excel file.');
+                return;
+            }
+
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array', cellDates: true });
+                const sheet = workbook.Sheets[workbook.SheetNames[0]];
+                // Read column A and store data
+                let columnA = [];
+                let sheetData = {};
+                let reading = false;
+
+                const range = XLSX.utils.decode_range(sheet['!ref']);
+                for (let R = range.s.r; R <= range.e.r; R++) {
+                    const cellAddress = XLSX.utils.encode_cell({ r: R, c: 0 });
+                    const cell = sheet[cellAddress];
+                    if (!cell) {
+                        if (reading) break;
+                        continue;
+                    }
+
+                    reading = true;
+                    const value = cell.v;
+                    columnA.push({ row: R + 1, column: 1, value: value });
+                    sheetData[`${R + 1},1`] = value;
+                }
+                // Traverse the row for each date item and store data
+                columnA.forEach(columnCell => {
+                    const row = columnCell.row;
+                    for (let C = 0; C <= range.e.c; C++) {
+                        const cellAddress = XLSX.utils.encode_cell({ r: row - 1, c: C });
+                        const cell = sheet[cellAddress];
+                        if (!cell) continue;
+
+                        const value = cell.v;
+                        sheetData[`${row},${C + 1}`] = { value: value, date: columnCell.value };
+                    }
+                });
+
+                // Detect rule violations
+                const ruleViolations = [];
+                const currentWorkRows = [];
+                let currentWorkers = [];
+
+                const sheetBounds = {
+                    start: {
+                        "row": Object.keys(sheetData).map(key => key.split(',')[0]).reduce((a, b) => Math.min(a, b)),
+                        "column": Object.keys(sheetData).map(key => key.split(',')[1]).reduce((a, b) => Math.min(a, b)),
+                    },
+                    end: {
+                        "row": Object.keys(sheetData).map(key => key.split(',')[0]).reduce((a, b) => Math.max(a, b)),
+                        "column": Object.keys(sheetData).map(key => key.split(',')[1]).reduce((a, b) => Math.max(a, b)),
+                    }
+                };
+
+                for (let row = sheetBounds.start.row; row < sheetBounds.end.row + 1; row++) {
+                    if (currentWorkRows.length >= 3) {
+                        currentWorkRows.shift();
+                    }
+                    currentWorkRows.push(row);
+
+                    currentWorkers = currentWorkers.filter(worker => currentWorkRows.includes(worker.row));
+                    for (let C = sheetBounds.start.column; C <= sheetBounds.end.column; C++) {
+                        const cellAddress = XLSX.utils.encode_cell({ r: row, c: C });
+                        const cell = sheet[cellAddress];
+                        if (!cell) continue;
+
+                        const value = cell.v;
+                        const otherWorker = currentWorkers.find(worker => worker.value === value);
+                        if (otherWorker) {
+                            if (["A", "B", "C"].includes(otherWorker.value)) {
+                                continue;
+                            }
+                                ruleViolations.push({
+                                    oldRow: otherWorker.row,
+                                    oldColumn: otherWorker.column,
+                                    row: row,
+                                    column: C + 1,
+                                    value: value,
+                                    message: `${value} is working on ${sheetData[`${otherWorker.row},1`].date.toLocaleDateString('en-US')} and ${sheetData[`${row},1`].date.toLocaleDateString('en-US')} :: Excel locations (${otherWorker.row}, ${otherWorker.column}) (${row}, ${C + 1})`
+                                });
+                        }
+
+                        currentWorkers.push({ row: row, column: C + 1, value: value });
+                    }
+                }
+
+                // Output rule violations
+                const output = document.getElementById('violationsOutput');
+                output.textContent = ruleViolations.map(v => `- ${v.message}`).join('\n');
+
+                // Save violations to a txt file
+                // const violationsBlob = new Blob([output.textContent], { type: 'text/plain' });
+                // saveAs(violationsBlob, 'violations.txt');
+            };
+
+            reader.readAsArrayBuffer(fileInput);
+        }
+    </script>
+</body>
+
+</html>
