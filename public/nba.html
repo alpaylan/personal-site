@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA FanteziLig Draft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            gap: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .list-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        input {
+            width: 60px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button.reset {
+            background-color: #f44336;
+        }
+        .person-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+            text-align: left;
+        }
+        .person-list li {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        @keyframes scramble {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .scramble-text {
+            font-family: monospace;
+            font-weight: bold;
+            animation: scramble 0.8s linear infinite;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            position: sticky;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="list-container">
+        <h1>Edit Weights</h1>
+        <ul id="editableList">
+            <!-- Original list with editable weights will be generated here -->
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h1>Randomly Ordered People</h1>
+        <ul id="personList" class="person-list"></ul>
+        <div class="button-container">
+            <button id="pickNextBtn" onclick="pickNext()">Pick Next</button>
+            <button id="resetBtn" class="reset" onclick="resetList()" style="display: none;">Reset</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let people = [
+        { name: 'Keleş', weight: 9 },
+        { name: 'Alp', weight: 8 },
+        { name: 'Mehmet', weight: 5.75 },
+        { name: 'Ayberk', weight: 5.75 },
+        { name: 'İbrahim', weight: 5.75 },
+        { name: 'Doruk', weight: 5.75 },
+        { name: 'Umut', weight: 5 },
+        { name: 'Enes', weight: 5 },
+        { name: 'Arda', weight: 1 },
+        { name: 'Batuhan', weight: 1 }
+    ];
+    let tempPeople = [...people];
+    let shuffledPeople = [];
+
+    // Generate the editable list with weights
+    function generateEditableList() {
+        const editableList = document.getElementById('editableList');
+        editableList.innerHTML = ''; // Clear the list
+        people.forEach((person, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                ${person.name} 
+                <input type="number" min="1" step="0.25" value="${person.weight}" onchange="updateWeight(${index}, this.value)">
+            `;
+            editableList.appendChild(li);
+        });
+    }
+
+    // Function to update the weight based on user input
+    function updateWeight(index, newWeight) {
+        people[index].weight = parseFloat(newWeight);
+        tempPeople = [...people]; // Update the temporary people list with the new weights
+    }
+
+    // Weighted random selection
+    function weightedRandom(people) {
+        let totalWeight = people.reduce((acc, person) => acc + person.weight, 0);
+        let random = Math.random() * totalWeight;
+        for (let person of people) {
+            if (random < person.weight) {
+                return person;
+            }
+            random -= person.weight;
+        }
+    }
+
+    // Scramble effect
+    function scrambleText(targetElement, finalText, scrambleDuration = 1000) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let scrambledText = '';
+        let interval;
+        const scrambleStartTime = Date.now();
+
+        // interval = setInterval(() => {
+        //     const elapsed = Date.now() - scrambleStartTime;
+
+        //     if (elapsed >= scrambleDuration) {
+        //         targetElement.textContent = finalText; // Set the final text
+        //         clearInterval(interval);
+        //     } else {
+        //         scrambledText = finalText.split('').map((char, i) => {
+        //             return characters.charAt(Math.floor(Math.random() * characters.length));
+        //         }).join('');
+        //         targetElement.textContent = scrambledText;
+        //     }
+        // }, 100); // Interval for changing the scramble text
+        
+        let scrambledChars = finalText.length;
+
+        interval = setInterval(() => {
+            const elapsed = Date.now() - scrambleStartTime;
+
+            if (elapsed >= scrambleDuration) {
+                targetElement.textContent = finalText; // Set the final text
+                clearInterval(interval);
+            } else {
+                scrambledText = finalText.split('').map((char, i) => {
+                    if (finalText.length - i - 1 < scrambledChars) {
+                        return characters.charAt(Math.floor(Math.random() * characters.length));
+                    } else {
+                        return char;
+                    }
+                }).join('');
+                targetElement.textContent = scrambledText;
+            }
+
+            if (elapsed >= (scrambleDuration / finalText.length) * (finalText.length - scrambledChars)) {
+                scrambledChars--;
+            }
+        }, 80); // Interval for changing the scramble text
+        
+
+    }
+
+    // Pick the next person based on weighted randomness with word scramble animation
+    function pickNext() {
+        if (tempPeople.length === 0) {
+            document.getElementById('pickNextBtn').style.display = 'none';
+            document.getElementById('resetBtn').style.display = 'inline-block';
+            return;
+        }
+
+        const selectedPerson = weightedRandom(tempPeople);
+        shuffledPeople.push(selectedPerson);
+
+        const personList = document.getElementById('personList');
+        const li = document.createElement('li');
+        li.classList.add('scramble-text'); // Add scramble effect styling
+        personList.appendChild(li);
+
+        // Run scramble effect before setting the final name
+        scrambleText(li, selectedPerson.name, 1500);
+
+        tempPeople.splice(tempPeople.indexOf(selectedPerson), 1); // Remove selected person from the list
+    }
+
+    // Reset the list after all people are selected
+    function resetList() {
+        shuffledPeople = [];
+        tempPeople = [...people];
+
+        const personList = document.getElementById('personList');
+        personList.innerHTML = ''; // Clear the display list
+
+        document.getElementById('pickNextBtn').style.display = 'inline-block';
+        document.getElementById('resetBtn').style.display = 'none';
+    }
+
+    // Initialize the editable list on page load
+    generateEditableList();
+</script>
+
+</body>
+</html>
